@@ -1,0 +1,30 @@
+<div [class.app-dark-theme]="true">
+    <mat-sidenav-container fullscreen class="sidenav-container">
+        <mat-toolbar class="toolbar">
+            <div class="social-media" (click)="openSubmitDialog()">
+                <img src="../../images/themeathon.png"> 
+                <div class="submit-text">Submit</div>
+            </div>
+
+            <div class="social-media" (click)="navigateToDiscord()">
+                <img src="../../images/discord.png"> 
+                <div class="social-media-text">Discord</div>
+            </div>
+
+            <div class="social-media" (click)="navigateToTwitch()">
+                <img src="../../images/twitch.png"> 
+                <div class="social-media-text">Twitch</div>
+            </div>
+
+            <div class="social-media" (click)="navigateToTwitter()">
+                <img src="../../images/twitter.png"> 
+                <div class="social-media-text">Twitter</div>
+            </div>
+
+            <div class="social-media" (click)="navigateToYoutube()">
+                <img src="../../images/youtube.png"> 
+                <div class="social-media-text">YouTube</div>
+            </div>
+        </mat-toolbar>
+    </mat-sidenav-container>
+</div>

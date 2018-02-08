@@ -1,0 +1,36 @@
+.sidenav-container {
+  height: 100%;
+  background-image: url("../../images/background.jpg");
+}
+
+.toolbar {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.social-media {
+  padding-top: 6px;
+  margin-right: 22px;
+  cursor: pointer;
+}
+
+.social-media-text {
+  float: right;
+  margin-left: 6px;
+}
+
+.submit-text {
+  float: right;
+  margin-left: 6px;
+}
+
+@media (max-width: 660px) {
+    /deep/.social-media-text {
+        display: none!important;
+    }
+}
+
+@media (max-width: 372px)  {
+    /deep/.submit-text {
+        display: none!important;
+    }
+}
