@@ -18,19 +18,20 @@
   margin-left: 6px;
 }
 
-.submit-text {
-  float: right;
-  margin-left: 6px;
+.button-container {
+  width: calc(50% + 72px);
+  height: calc(100% - 64px);
 }
 
-@media (max-width: 660px) {
+.submit-button {
+  float: right; 
+  top: calc(50% - 64px);
+  font-weight: bold;
+  font-size: large;
+}
+
+@media (max-width: 533px) {
     /deep/.social-media-text {
-        display: none!important;
-    }
-}
-
-@media (max-width: 372px)  {
-    /deep/.submit-text {
         display: none!important;
     }
 }

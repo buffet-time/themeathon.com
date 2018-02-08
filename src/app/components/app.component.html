@@ -1,11 +1,6 @@
 <div [class.app-dark-theme]="true">
     <mat-sidenav-container fullscreen class="sidenav-container">
         <mat-toolbar class="toolbar">
-            <div class="social-media" (click)="openSubmitDialog()">
-                <img src="../../images/themeathon.png"> 
-                <div class="submit-text">Submit</div>
-            </div>
-
             <div class="social-media" (click)="navigateToDiscord()">
                 <img src="../../images/discord.png"> 
                 <div class="social-media-text">Discord</div>
@@ -26,5 +21,12 @@
                 <div class="social-media-text">YouTube</div>
             </div>
         </mat-toolbar>
+
+        <div class="button-container">
+            <button mat-raised-button color="accent" class="submit-button" (click)="openSubmitDialog()">
+                Submissions
+            </button>
+        </div>
+        
     </mat-sidenav-container>
 </div>
