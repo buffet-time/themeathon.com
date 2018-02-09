@@ -22,11 +22,32 @@
             </div>
         </mat-toolbar>
 
-        <div class="button-container">
-            <button mat-raised-button color="accent" class="submit-button" (click)="openSubmitDialog()">
-                Submissions
-            </button>
-        </div>
-        
+        <mat-card class="about-card">
+            <mat-card-header class="about-header"> 
+                What is Themeathon? 
+            </mat-card-header><br> <br>
+
+            <mat-card-content class="about-content">
+                Themeathon is a charity marathon created by 
+                <a class="link-text" target="_blank" href="https://twitter.com/Lordmau5">Lordmau5</a>and 
+                <a class="link-text" target="_blank" href="https://twitter.com/JugachiHD">Jugachi</a> in late 2016. <br> <br>
+
+                The main focus of the marathon is set on speedruns, the art to finish video games as quickly as possible.<br> <br>
+    
+                It's going to be held online so anyone wanting to submit a speedrun themselves can easily be a part of the marathon.<br> <br>
+    
+                All the money raised is going directly to the Save The Children Foundation(http://www.savethechildren.org).<br> <br>
+    
+                The marathon will be taking place online for now but in the future we might consider to host an on-site event as well.<br> <br>
+    
+                The Themeathon staff will not earn anything from this nor do we want to.
+            </mat-card-content>
+
+            <mat-card-actions>
+                <button mat-raised-button color="accent" class="submit-button" (click)="openSubmitDialog()">
+                    Submissions
+                </button>
+            </mat-card-actions>
+        </mat-card>
     </mat-sidenav-container>
 </div>
