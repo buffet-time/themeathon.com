@@ -28,6 +28,7 @@
 /* content css */
 
 .about-card {
+  margin: 30px;
 	text-align: center;
 }
 
@@ -44,7 +45,7 @@
 }
 
 .link-text {
-	color: rgb(255, 0, 179);
+	color: rgb(253, 32, 187);
   font-weight: bold;
   font-size: large;
 }
