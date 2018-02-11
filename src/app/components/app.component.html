@@ -1,48 +1,57 @@
 <div [class.app-dark-theme]="true">
     <mat-sidenav-container fullscreen class="sidenav-container">
         <mat-toolbar class="toolbar">
-            <div class="social-media" (click)="navigateToDiscord()">
-                <img src="../../images/discord.png"> 
-                <div class="social-media-text">Discord</div>
+            <div class="logo">
+                <img src="../../images/themeathon.png">
+            </div>
+            <div class="social-media" id="discord" (click)="navigateToDiscord()">
+                <img src="../../images/discord.svg">
+                <!--<div class="social-media-text">Discord</div>-->
             </div>
 
             <div class="social-media" (click)="navigateToTwitch()">
-                <img src="../../images/twitch.png"> 
-                <div class="social-media-text">Twitch</div>
+                <img src="../../images/twitch.svg">
+                <!--<div class="social-media-text">Twitch</div>-->
             </div>
 
-            <div class="social-media" (click)="navigateToTwitter()">
-                <img src="../../images/twitter.png"> 
-                <div class="social-media-text">Twitter</div>
+            <div class="social-media"(click)="navigateToTwitter()">
+                <img src="../../images/twitter.svg">
+                <!--<div class="social-media-text">Twitter</div>-->
             </div>
 
             <div class="social-media" (click)="navigateToYoutube()">
-                <img src="../../images/youtube.png"> 
-                <div class="social-media-text">YouTube</div>
+                <img src="../../images/youtube.svg">
+                <!--<div class="social-media-text">YouTube</div>-->
             </div>
         </mat-toolbar>
 
         <mat-card class="about-card">
-            <mat-card-header class="about-header"> 
-                What is Themeathon? 
+            <mat-card-header class="about-header">
+                <h1 class="header-text">What is Themeathon?</h1>
             </mat-card-header>  <br> <br>
 
             <mat-card-content class="about-content">
-                Themeathon is a charity marathon created by 
-                <a class="link-text" target="_blank" href="https://twitter.com/Lordmau5">Lordmau5</a>and 
-                <a class="link-text" target="_blank" href="https://twitter.com/JugachiHD">Jugachi</a> in late 2016. <br> <br>
+                <img class="the-bois" src="../../images/thebois.png" height="199.24px" width="350px">
+                <div class="section-1">
+                    Themeathon is a charity marathon created by
+                    <a class="link-text" target="_blank" href="https://twitter.com/Lordmau5">Lordmau5</a> and
+                    <a class="link-text" target="_blank" href="https://twitter.com/JugachiHD">Jugachi</a> in late 2016. <br> <br>
 
-                The main focus of the marathon is set on speedruns, the art to finish video games as quickly as possible.<br> <br>
-    
-                It's going to be held online so anyone wanting to submit a speedrun themselves can easily be a part of the marathon.<br> <br>
-    
-                All the money raised is going directly to the 
-                <a class="link-text" target="_blank" href="http://www.savethechildren.org">Save The Children Foundation</a>
-                <br> <br>
-    
-                The marathon will be taking place online for now but in the future we might consider to host an on-site event as well.<br> <br>
-    
-                The Themeathon staff will not earn anything from this nor do we want to.
+                    The main focus of the marathon is speedrunning, the art of finishing video games as quickly as possible.<br> <br>
+
+                    Themeathon will be held online so anyone who wants to submit a speedrun can easily be a part of the marathon.<br> <br>
+
+                    All money raised is going directly to the <a class="link-text" target="_blank" href="http://www.savethechildren.org">Save The Children Foundation</a>.
+                    <br> <br>
+                </div>
+
+                <div class="section-2">
+                    For now the marathon will be solely online, however we aren't ruling out a live event for the future!<br> <br>
+
+                    The Themeathon staff will not earn anything from this, nor do we want to.
+                </div>
+
+                <img class="marathon" src="../../images/marathon.png" height="197.12px" width="350px">
             </mat-card-content>
 
             <mat-card-actions>
