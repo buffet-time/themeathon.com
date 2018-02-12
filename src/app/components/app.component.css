@@ -1,22 +1,15 @@
 @font-face {
-  font-family: BladeRunner;
-  src: url(../../fonts/BLADRMF.ttf);
+  font-family: ADAMCG;
+  src: url(../../fonts/adam.otf);
 }
 
 /* Toollbar css */
 .sidenav-container {
   height: 100%;
-  background-image: url("../../images/background.jpg");
 }
 
 .toolbar {
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.logo img {
-  margin-top: 7px;
-  width: 32px;
-  height: 32px;
 }
 
 .social-media {
@@ -25,18 +18,10 @@
   cursor: pointer;
 }
 
-#discord {
-  margin-left: 10%;
-}
-
 .social-media img {
   fill: #ffffff;
   width: 32px;
   height: 32px;
-}
-
-.social-media img:hover {
-  color: rgb(253, 32, 187);
 }
 
 .social-media-text {
@@ -52,12 +37,20 @@
 
 /* content css */
 
+.logo {
+  top: 20px;
+  left: 440px;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
 .about-card {
-  width: 75%;
+  width: 100vw;
   text-align: center;
-  margin-left: 10%;
-  padding-bottom: 50px;
-  border-radius: 20px;
+  padding-bottom: 200px;
+  background-color: #eaeaea;
+  color: #3a3a3a;
 }
 
 .about-header {
@@ -65,12 +58,11 @@
 }
 
 .header-text {
-  font-family: BladeRunner, sans-serif;
+  font-family: ADAMCG, sans-serif;
   font-size: 60px;
-  margin-left: 65px;
-  margin: -10px 0;
-  color: rgb(253, 32, 187);
-  text-shadow: 2px 2px #fff;
+  color: #fc4646;
+  text-shadow: 2px 2px #3a3a3a;
+  margin-left: 600px;
 }
 
 .about-content {
@@ -79,30 +71,59 @@
 }
 
 .about-content .the-bois {
-  border: 5px solid #ebebeb;
+  border: 2px solid #7a7a7a;
   border-radius: 8px;
-  position: absolute;
-  left: 100px;
+  position: fixed;
+  left: 250px;
 }
 
 .about-content .marathon {
-  border: 5px solid #ebebeb;
+  border: 2px solid #7a7a7a;
   border-radius: 8px;
   position: absolute;
-  right: 55px;
-  bottom: 20px;
+  display: inline-block;
+  bottom: 775px;
+  right: 225px;
+}
+
+.about-content .collage {
+  border: 2px solid #7a7a7a;
+  border-radius: 8px;
+  position: absolute;
+  display: inline-block;
+  bottom: 450px;
+  left: 250px;
 }
 
 .about-content .section-1 {
-  text-align: left;
+  text-align: justify;
   padding-top: 25px;
-  margin-left: 450px;
+  margin-left: 625px;
+  /*padding-right: 450px;*/
+}
+
+.subheading {
+  font-family: ADAMCG, sans-serif;
+  color: #fc4646;
+  text-shadow: 2px 2px #3a3a3a;
 }
 
 .about-content .section-2 {
   margin-top: 50px;
-  text-align: right;
-  margin-right: 425px;
+  text-align: justify;
+  margin-right: 775px;
+  margin-left: 250px;
+}
+
+.about-content .section-3 {
+  margin-top: 125px;
+  text-align: justify;
+  margin-left: 825px;
+}
+
+.about-content .section-4 {
+  margin-top: 100px;
+  margin-right: 130px;
 }
 
 .about-content a {
@@ -110,16 +131,16 @@
 }
 
 .submit-button {
+  position: absolute;
+  bottom: 75px;
+  right: 50%;
+  background-color: #fc4646;
   font-weight: bold;
   font-size: large;
 }
 
-.collage {
-
-}
-
 .link-text {
-  color: rgb(253, 32, 187);
+  color: #fc4646;
   font-weight: bold;
   font-size: large;
 }
