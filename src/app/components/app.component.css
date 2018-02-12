@@ -3,6 +3,11 @@
   src: url(../../fonts/adam.otf);
 }
 
+@font-face {
+  font-family: Anime;
+  src: url(../../fonts/anime.ttf);
+}
+
 /* Toollbar css */
 .sidenav-container {
   height: 100%;
@@ -133,10 +138,13 @@
 .submit-button {
   position: absolute;
   bottom: 75px;
-  right: 50%;
+  right: 47%;
   background-color: #fc4646;
-  font-weight: bold;
-  font-size: large;
+  font-family: Anime, sans-serif;
+  font-size: 24px;
+  border-radius: 100px;
+  height: 100px;
+  width: 250px;
 }
 
 .link-text {
