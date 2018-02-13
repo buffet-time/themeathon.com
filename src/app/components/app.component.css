@@ -70,6 +70,10 @@
   left: 12%;
 }
 
+.about-content .the-bois2 {
+  display: none;
+}
+
 .about-content .marathon {
   border: 2px solid #7a7a7a;
   border-radius: 8px;
@@ -88,11 +92,14 @@
   left: 250px;
 }
 
+.about-content .collage2 {
+  display: none;
+}
+
 .about-content .section-1 {
   text-align: justify;
   padding-top: 25px;
   margin-left: 35%;
-  /*padding-right: 450px;*/
 }
 
 .subheading {
@@ -152,6 +159,11 @@
   }
 
   .about-content .the-bois {
+    display: none;
+  }
+
+  .about-content .the-bois2 {
+    margin-top: 25px;
     border: 2px solid #7a7a7a;
     position: relative;
     display: block;
@@ -175,6 +187,10 @@
   }
 
   .about-content .collage {
+    display: none;
+  }
+
+  .about-content .collage2 {
     position: relative;
     border: 2px solid #7a7a7a;
     border-radius: 8px;
@@ -185,7 +201,6 @@
     height: auto;
     left: auto;
     bottom: auto;
-    margin-top: 60%;
   }
 
   .about-content .section-1 {
@@ -208,8 +223,8 @@
   }
 
   .about-content .section-3 {
+    margin-top: 56%;
     position: relative;
-    margin-top: 125px;
     text-align: center;
     display: block;
     width: 80vw;
