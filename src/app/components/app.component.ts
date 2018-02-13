@@ -1,5 +1,4 @@
 import { Component, Optional } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +6,10 @@ import { MatDialog, MatDialogRef } from '@angular/material';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent 
-{
-    constructor(private dialog: MatDialog) {}
-    
-    openSubmitDialog() {
-      const dialogRef = this.dialog.open(DialogContentComponent);
+{   
+    openSubmitDialog() 
+    {
+      window.open("https://submit.themeathon.com/");
     }
 
     navigateToDiscord() 
@@ -34,19 +32,3 @@ export class AppComponent
       window.open("https://www.youtube.com/channel/UCoeWJ8x6jM_tN5AnBqLzQfg");
     }
 }
-
-
-@Component({
-  selector: 'submit-dialog',
-  templateUrl: '../dialogs/submit.dialog.html',
-  styleUrls: ['../dialogs/submit.dialog.css']
-})
-export class DialogContentComponent 
-{
-  constructor( @Optional() public dialogRef: MatDialogRef<DialogContentComponent>) { }
-
-  navigateToSubmission()
-  {
-    window.open("https://submit.themeathon.com/");
-  }
-} 

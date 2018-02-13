@@ -1,53 +1,92 @@
 <div [class.app-dark-theme]="true">
     <mat-sidenav-container fullscreen class="sidenav-container">
         <mat-toolbar class="toolbar">
-            <div class="social-media" (click)="navigateToDiscord()">
-                <img src="../../images/discord.png"> 
-                <div class="social-media-text">Discord</div>
+            <div class="social-media" id="discord" (click)="navigateToDiscord()">
+                <img src="../../images/discord.png">
+                <!--<div class="social-media-text">Discord</div>-->
             </div>
 
             <div class="social-media" (click)="navigateToTwitch()">
-                <img src="../../images/twitch.png"> 
-                <div class="social-media-text">Twitch</div>
+                <img src="../../images/twitch.png">
+                <!--<div class="social-media-text">Twitch</div>-->
             </div>
 
-            <div class="social-media" (click)="navigateToTwitter()">
-                <img src="../../images/twitter.png"> 
-                <div class="social-media-text">Twitter</div>
+            <div class="social-media"(click)="navigateToTwitter()">
+                <img src="../../images/twitter.png">
+                <!--<div class="social-media-text">Twitter</div>-->
             </div>
 
             <div class="social-media" (click)="navigateToYoutube()">
-                <img src="../../images/youtube.png"> 
-                <div class="social-media-text">YouTube</div>
+                <img src="../../images/youtube.png">
+                <!--<div class="social-media-text">YouTube</div>-->
             </div>
         </mat-toolbar>
 
         <mat-card class="about-card">
-            <mat-card-header class="about-header"> 
-                What is Themeathon? 
+            <mat-card-header class="about-header">
+                <img class="logo" src="../../images/themeathon.png">
+                <h1 class="header-text">What is Themeathon?</h1>
             </mat-card-header>  <br> <br>
 
             <mat-card-content class="about-content">
-                Themeathon is a charity marathon created by 
-                <a class="link-text" target="_blank" href="https://twitter.com/Lordmau5">Lordmau5</a>and 
-                <a class="link-text" target="_blank" href="https://twitter.com/JugachiHD">Jugachi</a> in late 2016. <br> <br>
+                <img class="the-bois" src="../../images/thebois.png" height="199.24px" width="350px">
+                <div class="section-1">
+                    Themeathon is a charity marathon created by
+                    <a class="link-text" target="_blank" href="https://twitter.com/Lordmau5">Lordmau5</a> and
+                    <a class="link-text" target="_blank" href="https://twitter.com/JugachiHD">Jugachi</a> in late 2016. <br> <br>
 
-                The main focus of the marathon is set on speedruns, the art to finish video games as quickly as possible.<br> <br>
-    
-                It's going to be held online so anyone wanting to submit a speedrun themselves can easily be a part of the marathon.<br> <br>
-    
-                All the money raised is going directly to the 
-                <a class="link-text" target="_blank" href="http://www.savethechildren.org">Save The Children Foundation</a>
-                <br> <br>
-    
-                The marathon will be taking place online for now but in the future we might consider to host an on-site event as well.<br> <br>
-    
-                The Themeathon staff will not earn anything from this nor do we want to.
+                    The main focus of the marathon is speedrunning, the art of finishing video games as quickly as possible.<br> <br>
+
+                    Themeathon will be held online so anyone who wants to submit a speedrun can easily be a part of the marathon.<br> <br>
+
+                    All money raised is going directly to the <a class="link-text" target="_blank" href="http://www.savethechildren.org">Save The Children Foundation</a>. <br> <br>
+
+                    At the first Themeathon we raised a total of $4759, have raised over $15000 overall, and we only hope to grow from there!
+                </div>
+
+                <div class="section-2-outer">
+                    <div class="section-2">
+
+                        <h2 class="subheading">HERE'S THE TWIST!</h2>
+
+                        What makes Themeathon unique is that we have a theme for every marathon. <br> <br>
+
+                        During the downtime between runs, we will do our very best to entertain the entire audience, acting out the theme and providing
+                        consistent fun for the entire marathon! The stream layout, alerts, and website will be re-themed for every marathon as well. We go all out! <br> <br>
+                        One thing we don't restrict is the breadth of games we'll accept for the marathon, so runners don't have to worry about restricting themselves
+                        to the theme. <br> <br>
+
+                        The theme for Themeathon 2018 will be announced after the premarathon!
+                    </div>
+                    <img class="marathon" src="../../images/marathon.png" height="308.64px" width="548px">
+                </div>
+                <img class="collage" src="../../images/collage.png" height="308.64px" width="548px">
+
+
+                <div class="section-3">
+
+                    <h2 class="subheading">WHEN IS IT? WHERE IS IT?</h2>
+
+                    The dates for Themeathon 2018 will be announced soon! <br> <br>
+
+                    For now the marathon will be solely online, however we aren't ruling out a live event for the future!<br> <br>
+
+                </div>
+
+                <div class="section-4">
+                    <h2 class="subheading">WANT TO PARTICIPATE?</h2>
+                    We love all of our runners! In order to make Themeathon a great and <br> <br>
+                    successful marathon it not only requires an organized staff but also as many participants <br> <br>
+                    as possible to show the world how much gamers can do for good! <br> <br>
+
+                    The Themeathon staff doesn't earn anything from this, nor do we ever want to.
+                </div>
+
             </mat-card-content>
 
             <mat-card-actions>
-                <button mat-raised-button color="accent" class="submit-button" (click)="openSubmitDialog()">
-                    Submissions
+                <button mat-raised-button class="submit-button" (click)="openSubmitDialog()">
+                    Submit a Run
                 </button>
             </mat-card-actions>
         </mat-card>

@@ -1,7 +1,16 @@
+@font-face {
+  font-family: ADAMCG;
+  src: url(../../fonts/adam.otf);
+}
+
+@font-face {
+  font-family: Anime;
+  src: url(../../fonts/anime.ttf);
+}
+
 /* Toollbar css */
 .sidenav-container {
-  height: 100%;
-  background-image: url("../../images/background.jpg");
+
 }
 
 .toolbar {
@@ -10,42 +19,230 @@
 
 .social-media {
   padding-top: 6px;
-  margin-right: 22px;
+  margin: 0 25px;
   cursor: pointer;
+}
+
+.social-media img {
+  fill: #ffffff;
+  width: 32px;
+  height: 32px;
 }
 
 .social-media-text {
   float: right;
   margin-left: 6px;
 }
-
-@media (max-width: 533px) {
-  /deep/.social-media-text {
-      display: none!important;
-  }
-}
-
 /* content css */
 
+.logo {
+  top: 20px;
+  left: 440px;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
 .about-card {
-  margin: 30px;
-	text-align: center;
+  text-align: center;
+  padding-bottom: 200px;
+  background-color: #eaeaea;
+  color: #3a3a3a;
 }
 
-.about-header {
+.header-text {
+  font-family: ADAMCG, sans-serif;
+  font-size: 60px;
+  color: #fc4646;
+  text-shadow: 2px 2px #3a3a3a;
+  margin-left: 600px;
 }
 
-.about-content { 
+.about-content {
   font-size: large;
+  font-family: Verdana, sans-serif;
+}
+
+.about-content .the-bois {
+  border: 2px solid #7a7a7a;
+  border-radius: 8px;
+  position: fixed;
+  left: 12%;
+}
+
+.about-content .marathon {
+  border: 2px solid #7a7a7a;
+  border-radius: 8px;
+  position: absolute;
+  display: inline-block;
+  bottom: 825px;
+  right: 10%;
+}
+
+.about-content .collage {
+  border: 2px solid #7a7a7a;
+  border-radius: 8px;
+  position: absolute;
+  display: inline-block;
+  bottom: 550px;
+  left: 250px;
+}
+
+.about-content .section-1 {
+  text-align: justify;
+  padding-top: 25px;
+  margin-left: 35%;
+  /*padding-right: 450px;*/
+}
+
+.subheading {
+  font-family: ADAMCG, sans-serif;
+  color: #fc4646;
+  text-shadow: 2px 2px #3a3a3a;
+}
+
+.about-content .section-2 {
+  margin-top: 50px;
+  text-align: justify;
+  margin-right: 45%;
+  margin-left: 12%;
+}
+
+.about-content .section-3 {
+  margin-top: 125px;
+  text-align: justify;
+  margin-left: 825px;
+}
+
+.about-content .section-4 {
+  margin-top: 100px;
+  margin-right: 145px;
+}
+
+.about-content a {
+  text-decoration: none;
 }
 
 .submit-button {
+  position: static;
+  bottom: 75px;
+  right: 47%;
+  background-color: #fc4646;
+  font-family: Anime, sans-serif;
+  font-size: 24px;
+  border-radius: 100px;
+  height: 100px;
+  width: 250px;
+}
+
+.link-text {
+  color: #fc4646;
   font-weight: bold;
   font-size: large;
 }
 
-.link-text {
-	color: rgb(253, 32, 187);
-  font-weight: bold;
-  font-size: large;
+@media (max-width: 1550px) {
+
+  .header-text {
+    left: auto;
+    margin-left: 5vw;
+    width: 80vw;
+  }
+  .logo {
+    display: none;
+  }
+
+  .about-content .the-bois {
+    border: 2px solid #7a7a7a;
+    position: relative;
+    display: block;
+    margin-right: 2%;
+    width: 90vw;
+    height: auto;
+    left: auto;
+  }
+
+  .about-content .marathon {
+    border: 2px solid #7a7a7a;
+    border-radius: 8px;
+    display: block;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 90vw;
+    height: auto;
+    left: 2.5%;
+    bottom: auto;
+    margin-top: 15px;
+  }
+
+  .about-content .collage {
+    position: relative;
+    border: 2px solid #7a7a7a;
+    border-radius: 8px;
+    display: block;
+    margin-left: 1%;
+    margin-right: 5%;
+    width: 90vw;
+    height: auto;
+    left: auto;
+    bottom: auto;
+    margin-top: 60%;
+  }
+
+  .about-content .section-1 {
+    position: relative;
+    text-align: center;
+    padding-top: 25px;
+    display: block;
+    width: 80vw;
+    margin-left: 5%;
+    margin-right: 2%;
+  }
+
+  .subheading {
+    font-family: ADAMCG, sans-serif;
+    color: #fc4646;
+    text-shadow: 2px 2px #3a3a3a;
+  }
+
+  .about-content .section-2 {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+    margin-left: 2%;
+    margin-right: 10%;
+  }
+
+  .about-content .section-3 {
+    position: relative;
+    margin-top: 125px;
+    text-align: center;
+    display: block;
+    width: 80vw;
+    margin-left: 5%;
+    margin-right: 2%;
+  }
+
+  .about-content .section-4 {
+    position: relative;
+    margin-top: 100px;
+    display: block;
+    width: 80vw;
+    margin-left: 5%;
+    margin-right: 2%;
+  }
+
+  .submit-button {
+    width: 90vw;
+    right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-text {
+    width: 100vw;
+    margin-left: -5%;
+    font-size: 36px;
+  }
 }

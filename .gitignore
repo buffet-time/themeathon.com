@@ -23,6 +23,9 @@ firebase.json
 .settings/
 *.sublime-workspace
 .vs
+*.ipr
+*.iml
+*.iws
 
 # IDE - VSCode
 .vscode/*
