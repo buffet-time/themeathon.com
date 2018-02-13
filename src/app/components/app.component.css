@@ -79,7 +79,7 @@
   border: 2px solid #7a7a7a;
   border-radius: 8px;
   position: fixed;
-  left: 250px;
+  left: 12%;
 }
 
 .about-content .marathon {
@@ -88,7 +88,7 @@
   position: absolute;
   display: inline-block;
   bottom: 775px;
-  right: 225px;
+  right: 10%;
 }
 
 .about-content .collage {
@@ -103,7 +103,7 @@
 .about-content .section-1 {
   text-align: justify;
   padding-top: 25px;
-  margin-left: 625px;
+  margin-left: 35%;
   /*padding-right: 450px;*/
 }
 
@@ -116,8 +116,8 @@
 .about-content .section-2 {
   margin-top: 50px;
   text-align: justify;
-  margin-right: 775px;
-  margin-left: 250px;
+  margin-right: 45%;
+  margin-left: 12%;
 }
 
 .about-content .section-3 {
