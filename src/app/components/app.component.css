@@ -54,7 +54,7 @@
   font-family: ADAMCG, sans-serif;
   font-size: 60px;
   color: #fc4646;
-  text-shadow: 2px 2px #eaeaea;
+  text-shadow: 3px 3px #161638;
   margin-left: 600px;
 }
 
@@ -98,7 +98,7 @@
 .subheading {
   font-family: ADAMCG, sans-serif;
   color: #fc4646;
-  text-shadow: 1px 1px #eaeaea;
+  text-shadow: 2px 2px #161638;
 }
 
 .about-content .section-2 {
