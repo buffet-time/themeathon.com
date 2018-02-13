@@ -10,12 +10,11 @@ import { MATERIAL_COMPATIBILITY_MODE } from '@angular/material';
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { MaterialImportModule } from './material-import.module';
 
-import { AppComponent, DialogContentComponent } from './components/app.component';
+import { AppComponent } from './components/app.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DialogContentComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +26,7 @@ import { AppComponent, DialogContentComponent } from './components/app.component
   providers: [
     {provide: MATERIAL_COMPATIBILITY_MODE, useValue: true},
   ],
-  entryComponents: [DialogContentComponent],
+  entryComponents: [],
   bootstrap: [AppComponent]
 })
 export class AppModule 
