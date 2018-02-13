@@ -9,10 +9,6 @@
 }
 
 /* Toollbar css */
-.sidenav-container {
-
-}
-
 .toolbar {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -33,6 +29,7 @@
   float: right;
   margin-left: 6px;
 }
+
 /* content css */
 
 .logo {
