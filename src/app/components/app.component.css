@@ -46,15 +46,15 @@
 .about-card {
   text-align: center;
   padding-bottom: 200px;
-  background-color: #eaeaea;
-  color: #3a3a3a;
+  color: #eaeaea;
+  background-color: #3a3a3a;
 }
 
 .header-text {
   font-family: ADAMCG, sans-serif;
   font-size: 60px;
   color: #fc4646;
-  text-shadow: 2px 2px #3a3a3a;
+  text-shadow: 2px 2px #eaeaea;
   margin-left: 600px;
 }
 
@@ -98,7 +98,7 @@
 .subheading {
   font-family: ADAMCG, sans-serif;
   color: #fc4646;
-  text-shadow: 2px 2px #3a3a3a;
+  text-shadow: 1px 1px #eaeaea;
 }
 
 .about-content .section-2 {
@@ -116,7 +116,6 @@
 
 .about-content .section-4 {
   margin-top: 100px;
-  margin-right: 145px;
 }
 
 .about-content a {
@@ -157,7 +156,7 @@
     position: relative;
     display: block;
     margin-right: 2%;
-    width: 90vw;
+    width: 80vw;
     height: auto;
     left: auto;
   }
@@ -168,7 +167,7 @@
     display: block;
     margin-left: 2%;
     margin-right: 2%;
-    width: 90vw;
+    width: 80vw;
     height: auto;
     left: 2.5%;
     bottom: auto;
@@ -182,7 +181,7 @@
     display: block;
     margin-left: 1%;
     margin-right: 5%;
-    width: 90vw;
+    width: 80vw;
     height: auto;
     left: auto;
     bottom: auto;
