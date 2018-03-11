@@ -76,7 +76,7 @@
   border-radius: 8px;
   position: absolute;
   display: inline-block;
-  bottom: 825px;
+  bottom: 440px;
   right: 10%;
 }
 
@@ -85,7 +85,7 @@
   border-radius: 8px;
   position: absolute;
   display: inline-block;
-  bottom: 550px;
+  bottom: 100px;
   left: 250px;
 }
 
@@ -116,10 +116,6 @@
   margin-top: 125px;
   text-align: justify;
   margin-left: 825px;
-}
-
-.about-content .section-4 {
-  margin-top: 100px;
 }
 
 .about-content a {
@@ -227,15 +223,6 @@
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .about-content .section-4 {
-    position: relative;
-    margin-top: 100px;
-    display: block;
-    width: 80vw;
-    margin-left: 5%;
-    margin-right: 2%;
   }
 
   .submit-button {

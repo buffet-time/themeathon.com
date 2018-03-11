@@ -7,11 +7,6 @@ import { Component, Optional } from '@angular/core';
 })
 export class AppComponent 
 {   
-    openSubmitDialog() 
-    {
-      window.open("https://submit.themeathon.com/");
-    }
-
     navigateToDiscord() 
     {
       window.open("https://discordapp.com/invite/wd5GwXK");
