@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule, Routes } from '@angular/router';
 
 import 'hammerjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,10 +12,14 @@ import { OverlayContainer } from '@angular/cdk/overlay';
 import { MaterialImportModule } from './material-import.module';
 
 import { AppComponent } from './components/app.component';
+import { AboutComponent } from './components/about.component';
+import { StreamComponent } from './components/stream.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutComponent,
+    StreamComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,7 @@ import { AppComponent } from './components/app.component';
     {provide: MATERIAL_COMPATIBILITY_MODE, useValue: true},
   ],
   entryComponents: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, AboutComponent, StreamComponent]
 })
 export class AppModule 
 {

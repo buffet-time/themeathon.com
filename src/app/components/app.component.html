@@ -3,32 +3,31 @@
         <mat-toolbar class="toolbar">
             <div class="social-media" id="discord" (click)="navigateToDiscord()">
                 <img src="../../images/discord.png">
-                <!--<div class="social-media-text">Discord</div>-->
             </div>
 
             <div class="social-media" (click)="navigateToTwitch()">
                 <img src="../../images/twitch.png">
-                <!--<div class="social-media-text">Twitch</div>-->
             </div>
 
             <div class="social-media"(click)="navigateToTwitter()">
                 <img src="../../images/twitter.png">
-                <!--<div class="social-media-text">Twitter</div>-->
             </div>
 
             <div class="social-media" (click)="navigateToYoutube()">
                 <img src="../../images/youtube.png">
-                <!--<div class="social-media-text">YouTube</div>-->
             </div>
-        </mat-toolbar>
-        <mat-card>
-            <mat-card-content>
-                <iframe src="https://player.twitch.tv/?channel=themeathon" frameborder="0" 
-                allowfullscreen="true" scrolling="no" height="378" width="620"> </iframe>
 
-                <iframe src="https://www.twitch.tv/themeathon/chat?popout=" 
-                frameborder="0" scrolling="no" height="500" width="350"></iframe>
-            </mat-card-content>
-        </mat-card>
+            <button mat-raised-button color="accent" (click)="toAbout()" *ngIf="stream">
+                About
+            </button>
+
+            <button mat-raised-button color="accent" (click)="toStream()" *ngIf="about">
+                Home
+            </button>
+        </mat-toolbar>
+
+        <!-- switch between routes here -->
+        <stream-component *ngIf="stream"></stream-component>
+        <about-component *ngIf="about"></about-component>
     </mat-sidenav-container>
 </div>
