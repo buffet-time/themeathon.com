@@ -1,5 +1,9 @@
 .toolbar {
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  top: 0px;
+	position: sticky; 
+  position: -webkit-sticky;
+	z-index: 50;
 }
 
 .social-media {
