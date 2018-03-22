@@ -1,4 +1,32 @@
+@font-face {
+	font-family: ADAM;
+	src: url(../../fonts/ADAM.otf);
+}
+.main-container {
+	padding-top:  2%;
+	overflow: hidden;
+}
 .schedule-frame {
 	height: 800px;
 	width: 650px;
+	margin-top: -50px;
+}
+.twitch {
+	margin-top:  8%;
+	margin-left: -5%;
+	margin-right: 50px;
+	float: left;
+}
+#themeathon {
+	float: left;
+	margin-left: 15%;
+}
+#header {
+	display: inline;
+	font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
+	color: rgb(252, 70, 70);
+	text-shadow: rgb(22, 22, 56) 3px 3px 0;
+	font-size: 70px;
+	margin-left: -30%;
+	margin-bottom: -50px;
 }

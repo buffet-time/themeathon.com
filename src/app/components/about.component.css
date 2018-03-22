@@ -1,0 +1,13 @@
+@font-face {
+    font-family: ADAM;
+    src: url(../../fonts/ADAM.otf);
+}
+.caption * {
+    font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
+    text-align: center;
+}
+
+.row-header * {
+    font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
+    text-align: right;
+}
