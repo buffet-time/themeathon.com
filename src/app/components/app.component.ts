@@ -6,7 +6,7 @@ import { Component, Optional } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent 
-{ 
+{
     stream: boolean = true;
     about: boolean = false;
 

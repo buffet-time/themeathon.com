@@ -12,14 +12,15 @@ import { OverlayContainer } from '@angular/cdk/overlay';
 import { MaterialImportModule } from './material-import.module';
 
 import { AppComponent } from './components/app.component';
-import { AboutComponent } from './components/about.component';
+import { AboutComponent, DescriptionDialog } from './components/about.component';
 import { StreamComponent } from './components/stream.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    StreamComponent
+    StreamComponent,
+    DescriptionDialog
   ],
   imports: [
     BrowserModule,
@@ -32,7 +33,7 @@ import { StreamComponent } from './components/stream.component';
     {provide: MATERIAL_COMPATIBILITY_MODE, useValue: true},
   ],
   entryComponents: [],
-  bootstrap: [AppComponent, AboutComponent, StreamComponent]
+  bootstrap: [AppComponent, AboutComponent, StreamComponent, DescriptionDialog]
 })
 export class AppModule 
 {

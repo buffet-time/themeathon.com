@@ -9,8 +9,12 @@
             <td>Founders</td>
         </tr>
         <tr class="founders">
-            <td><img src="../../images/jugachi.png"></td>
-            <td><img src="../../images/lordmau5.png"></td>
+            <td class="staff-picture" (click)="openSettings(this.jugachiDescription, 'Jugachi')">
+                <img src="../../images/jugachi.png">
+            </td>
+            <td class="staff-picture" (click)="openSettings(this.lordmausDescription, 'Lordmau5')">
+                <img src="../../images/lordmau5.png">
+            </td>
         </tr>
         <tr class="caption">
             <td>Jugachi</td>
@@ -20,17 +24,27 @@
             <td>Developers</td>
         </tr>
         <tr class="developers">
-            <td><img src="../../images/nic.png"></td>
-            <td><img src="../../images/buffet.png"></td>
+            <td class="staff-picture" (click)="openSettings(this.nicDescription, 'Nic Howe')">
+                <img src="../../images/nic.png">
+            </td>
+            <td class="staff-picture" (click)="openSettings(this.buffetDescription, 'Buffet Time')">
+                <img src="../../images/buffet.png">
+            </td>
         </tr>
         <tr class="caption">
-            <td>nichow</td>
-            <td>Daniel "Buffet Time" Turcich</td>
+            <td>Nichow</td>
+            <td>Buffet Time</td>
         </tr>
         <tr class="other">
-            <td><img src="../../images/kona.png"></td>
-            <td><img src="../../images/dqfan.png"></td>
-            <td><img src="../../images/speedy.png"></td>
+            <td class="staff-picture" (click)="openSettings(this.konasumiDescription, 'Konasumi')">
+                <img src="../../images/kona.png">
+            </td>
+            <td class="staff-picture" (click)="openSettings(this.dqfanDescription, 'DQFan')">
+                <img src="../../images/dqfan.png">
+            </td>
+            <td class="staff-picture" (click)="openSettings(this.speedyDescription, 'Speedy')">
+                <img src="../../images/speedy.png">
+            </td>
         </tr>
         <tr class="caption">
             <td>Konasumi</td>
