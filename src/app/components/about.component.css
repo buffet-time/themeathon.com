@@ -3,6 +3,10 @@
     src: url(../../fonts/ADAM.otf);
 }
 
+.link {
+    color: pink;
+}
+
 .first-staff {
     margin-left: 38%;
 }
