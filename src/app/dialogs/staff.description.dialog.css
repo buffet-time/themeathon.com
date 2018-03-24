@@ -1,13 +1,20 @@
+@font-face {
+	font-family: ADAM;
+	src: url(../../fonts/ADAM.otf);
+}
+
 .main-container {
 	max-width: 500px;
 }
 
 .title {
 	padding-bottom: 10px;
+	font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
 	font-weight: 700;
 	font-size: xx-large;
+	text-align: center;
 }
 
 .description { 
-
+	font-family: Roboto, "Helvetica Neue", sans-serif;
 }
