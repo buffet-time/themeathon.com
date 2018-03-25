@@ -4,15 +4,22 @@
 }
 
 .link {
-    color: pink;
+    color: rgb(252, 70, 70);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: rgb(252, 120, 120);
 }
 
 .first-staff {
-    margin-left: 38%;
+    float: right;
+    margin-right: 35%;
 }
 
 .second-staff {
-    margin-left: 31%;
+    float: right;
+    margin-right: 28%;
 }
 
 .caption * {
@@ -38,4 +45,43 @@
 .staff-picture * {
     border: solid 4px #333333;
     border-radius: 10px;
+}
+
+.about-stc {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+@media (max-width: 1642px) {
+    .first-staff {
+        margin-right: 32%;
+    }
+
+    .second-staff {
+        margin-right: 25%;
+    }
+}
+
+@media (max-width: 1397px) {
+    .first-staff {
+        margin-right: 30%;
+    }
+
+    .second-staff {
+        margin-right: 23%;
+    }
+}
+
+@media (max-width: 958px) {
+    .first-staff {
+        margin-right: 21%;
+    }
+
+    .second-staff {
+        margin-right: 7%;
+    }
 }

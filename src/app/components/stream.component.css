@@ -10,24 +10,32 @@
 	height: 800px;
 	width: 650px;
 	margin-top: -50px;
+	overflow: hidden;
 }
 .twitch {
-	margin-top:  8%;
-	margin-left: -5%;
+	margin-top: 3%;
+	margin-left: 18%;
 	margin-right: 50px;
 	float: left;
 }
 #themeathon {
 	float: left;
 	margin-left: 15%;
+	margin-right: -25px;
 }
+
+.header-wrapper {
+	margin-bottom: -25px;
+}
+
 #header {
-	display: inline;
 	font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
 	color: rgb(252, 70, 70);
 	text-shadow: rgb(22, 22, 56) 3px 3px 0;
 	letter-spacing: 3px;
 	font-size: 70px;
-	margin-left: -30%;
-	margin-bottom: -50px;
 }
+
+/*@media (max-width: 1626px) {*/
+	/*.schedule-frame*/
+/*}*/
