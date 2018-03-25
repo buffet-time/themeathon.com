@@ -16,18 +16,10 @@
             <div class="social-media" (click)="navigateToYoutube()">
                 <img src="../../images/youtube.png">
             </div>
-
-            <button mat-raised-button color="accent" (click)="toAbout()" *ngIf="stream">
-                About
-            </button>
-
-            <button mat-raised-button color="accent" (click)="toStream()" *ngIf="about">
-                Home
-            </button>
         </mat-toolbar>
+        
+        <stream-component></stream-component>
+        <about-component></about-component>
 
-        <!-- switch between routes here -->
-        <stream-component *ngIf="stream"></stream-component>
-        <about-component *ngIf="about"></about-component>
     </mat-sidenav-container>
 </div>
