@@ -9,14 +9,22 @@
 .schedule-frame {
 	height: 800px;
 	width: 650px;
-	margin-top: -50px;
 	overflow: hidden;
 }
+
+.schedule {
+	margin-top: -50px;
+	width: 650px;
+	height: 800px;
+	float: left;
+}
+
 .twitch {
 	margin-top: 3%;
-	margin-left: 18%;
+	margin-left: 342px;
 	margin-right: 50px;
 	float: left;
+	width: 620px;
 }
 #themeathon {
 	float: left;
@@ -36,6 +44,8 @@
 	font-size: 70px;
 }
 
-/*@media (max-width: 1626px) {*/
-	/*.schedule-frame*/
-/*}*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.twitch {
+		margin-left: -50px;
+	}
+}
