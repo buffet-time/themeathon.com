@@ -29,7 +29,7 @@
 }
 
 .themeathon-name {
-  position: fixed;
+  position: absolute;
   width: 100vw;
   margin-top: 10px;
   margin-left: 42.5%;

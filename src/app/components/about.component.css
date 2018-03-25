@@ -48,12 +48,43 @@
 }
 
 .about-stc {
+    width: 840px;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    text-align: center;
-    margin-top: 25px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 25px 65px;
+}
 
+.about-thm {
+    width: 840px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    margin: 25px 65px;
+}
+
+h1 {
+    font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
+    text-align: center;
+    color: rgb(252, 70, 70);
+    text-shadow: rgb(22, 22, 56) 3px 3px 0;
+}
+
+.schedule-frame {
+    height: 680px;
+    width: 450px;
+    overflow: hidden;
+}
+
+.schedule {
+    width: 450px;
+    height: 680px;
+    position: absolute;
+    right: 525px;
+    top: 90px;
+}
+
+.twitch {
+    width: 475px;
+    position: absolute;
+    top: 250px;
+    right: 25px;
 }
 
 @media (max-width: 1642px) {

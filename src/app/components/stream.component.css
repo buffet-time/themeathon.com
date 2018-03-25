@@ -6,26 +6,6 @@
 	padding-top:  2%;
 	overflow: hidden;
 }
-.schedule-frame {
-	height: 800px;
-	width: 650px;
-	overflow: hidden;
-}
-
-.schedule {
-	margin-top: -50px;
-	width: 650px;
-	height: 800px;
-	float: left;
-}
-
-.twitch {
-	margin-top: 3%;
-	margin-left: 18%;
-	margin-right: 50px;
-	float: left;
-	width: 620px;
-}
 #themeathon {
 	float: left;
 	margin-left: 15%;
