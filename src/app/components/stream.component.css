@@ -21,7 +21,7 @@
 
 .twitch {
 	margin-top: 3%;
-	margin-left: 342px;
+	margin-left: 18%;
 	margin-right: 50px;
 	float: left;
 	width: 620px;
@@ -44,8 +44,15 @@
 	font-size: 70px;
 }
 
+@media(max-width: 1641px) {
+
+}
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	.twitch {
 		margin-left: -50px;
+	}
+	@media(max-width: 1627px) {
+
 	}
 }

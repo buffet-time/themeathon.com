@@ -1,3 +1,8 @@
+@font-face {
+  font-family: ADAM;
+  src: url(../../fonts/ADAM.otf);
+}
+
 .toolbar {
   /* background-color: rgba(0, 0, 0, 0.5); */
   top: 0px;
@@ -21,4 +26,43 @@
 .social-media-text {
   float: right;
   margin-left: 6px;
+}
+
+.themeathon-name {
+  position: fixed;
+  width: 100vw;
+  margin-top: 10px;
+  margin-left: 42.5%;
+}
+
+.themeathon-name tr * {
+  margin-right: -22.5px;
+}
+
+.themeathon-name span {
+  font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 32px;
+  color: rgb(252, 70, 70);
+  text-shadow: rgb(22, 22, 56) 3px 3px 0;
+}
+
+@media (max-width: 1705px) {
+  .themeathon-name {
+    margin-left: 41%;
+  }
+}
+
+@media (max-width: 1361px) {
+  .themeathon-name {
+    margin-left: 39%;
+  }
+}
+
+@media (max-width: 959px) {
+  .themeathon-name {
+    margin-left: 34%;
+  }
+  .social-media {
+    margin: 0 15px;
+  }
 }
