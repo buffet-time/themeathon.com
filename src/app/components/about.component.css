@@ -3,6 +3,16 @@
     src: url(../../fonts/ADAM.otf);
 }
 
+.section-header {
+    font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 40px;
+    color: rgb(252, 70, 70);
+    text-shadow: rgb(22, 22, 56) 3px 3px 0;
+    padding-bottom: 10px;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
 .link {
     color: rgb(252, 70, 70);
     text-decoration: none;
@@ -36,6 +46,7 @@
     text-shadow: rgb(22, 22, 56) 3px 3px 0;
     padding-bottom: 10px;
     letter-spacing: 8px;
+    padding-top: 10px;
 }
 
 .staff-picture {
