@@ -12,51 +12,18 @@
     color: rgb(252, 120, 120);
 }
 
-.first-staff {
-    float: right;
-    margin-right: 35%;
-}
-
-.second-staff {
-    float: right;
-    margin-right: 28%;
-}
-
-.caption * {
-    font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
-    text-align: center;
-    color: rgb(252, 70, 70);
-    text-shadow: rgb(22, 22, 56) 3px 3px 0;
-}
-
-.row-header * {
-    font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
-    font-size: 32px;
-    color: rgb(252, 70, 70);
-    text-shadow: rgb(22, 22, 56) 3px 3px 0;
-    padding-bottom: 10px;
-    letter-spacing: 8px;
-}
-
-.staff-picture {
-    cursor: pointer;
-}
-
-.staff-picture * {
-    border: solid 4px #333333;
-    border-radius: 10px;
-}
-
 .about-stc {
+    text-align: center;
     width: 840px;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    margin: 25px 65px;
+    margin: 25px 525px;
 }
 
 .about-thm {
+    text-align: center;
     width: 840px;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    margin: 25px 65px;
+    margin: 25px 535px;
 }
 
 h1 {
@@ -76,7 +43,7 @@ h1 {
     width: 450px;
     height: 680px;
     position: absolute;
-    right: 525px;
+    right: 60px;
     top: 90px;
 }
 
@@ -84,41 +51,11 @@ h1 {
     width: 475px;
     position: absolute;
     top: 135px;
-    right: 25px;
+    left: 25px;
 }
 
 #save-children {
     position: absolute;
-    right: 120px;
+    left: 120px;
     top: 460px;
-}
-
-@media (max-width: 1642px) {
-    .first-staff {
-        margin-right: 32%;
-    }
-
-    .second-staff {
-        margin-right: 25%;
-    }
-}
-
-@media (max-width: 1397px) {
-    .first-staff {
-        margin-right: 30%;
-    }
-
-    .second-staff {
-        margin-right: 23%;
-    }
-}
-
-@media (max-width: 958px) {
-    .first-staff {
-        margin-right: 21%;
-    }
-
-    .second-staff {
-        margin-right: 7%;
-    }
 }

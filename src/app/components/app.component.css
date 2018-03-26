@@ -32,7 +32,8 @@
   position: absolute;
   width: 100vw;
   margin-top: 10px;
-  margin-left: 42.5%;
+  margin-left: 41.5%;
+  letter-spacing: 3px;
 }
 
 .themeathon-name tr * {

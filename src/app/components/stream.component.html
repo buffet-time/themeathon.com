@@ -1,7 +1,74 @@
 <div class="main-container">
-	<!--<img id="themeathon" src="/images/themeathon.png" style="height: 150px; width: 150px;">-->
-	<!--<div class="header-wrapper">-->
-		<!--<h1 id="header">HEMEATHON</h1>-->
-	<!--</div>-->
+	<h1>Our beloved Team</h1>
+	<div class="staff-section">
+		<table class="first-staff">
+			<tr class="row-header">
+				<td style="text-align: right;">Foun</td>
+				<td>ders</td>
+			</tr>
+			<tr class="founders">
+				<td class="staff-picture" (click)="openSettings(this.jugachiDescription, 'Jugachi')">
+					<img src="../../images/jugachi.png">
+				</td>
+				<td class="staff-picture" (click)="openSettings(this.lordmausDescription, 'Lordmau5')">
+					<img src="../../images/lordmau5.png">
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Jugachi</td>
+				<td>Lordmau5</td>
+			</tr>
+			<tr class="row-header">
+				<td style="text-align: right;">Devel</td>
+				<td>opers</td>
+			</tr>
+			<tr class="developers">
+				<td class="staff-picture" (click)="openSettings(this.nicDescription, 'Nic Howe')">
+					<img src="../../images/nic.png">
+				</td>
+				<td class="staff-picture" (click)="openSettings(this.buffetDescription, 'Buffet Time')">
+					<img src="../../images/buffet.png">
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Nichow</td>
+				<td>Buffet Time</td>
+			</tr>
+		</table>
 
+		<table class="second-staff">
+			<tr class="row-header">
+				<td style="text-align: right">Mo</td>
+				<td>ds</td>
+			</tr>
+			<tr class="other">
+				<td class="staff-picture" (click)="openSettings(this.konasumiDescription, 'Konasumi')">
+					<img src="../../images/kona.png">
+				</td>
+				<td class="staff-picture" (click)="openSettings(this.dqfanDescription, 'DQFan')">
+					<img src="../../images/dqfan.png">
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Konasumi</td>
+				<td>DQFan</td>
+			</tr>
+			<tr class="row-header">
+				<td style="text-align: center">Editor</td>
+				<td style="text-align: center">Host/Mod</td>
+			</tr>
+			<tr class="other">
+				<td class="staff-picture" (click)="openSettings(this.speedyDescription, 'Speedy')">
+					<img src="../../images/speedy.png">
+				</td>
+				<td class="staff-picture">
+					<img src="../../images/fox.png">
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Speedy</td>
+				<td>Fox</td>
+			</tr>
+		</table>
+	</div>
 </div>
