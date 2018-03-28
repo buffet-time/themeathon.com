@@ -7,6 +7,7 @@ import { MatDialog, MatDialogRef } from '@angular/material';
   templateUrl: './stream.component.html',
   styleUrls: ['./stream.component.css']
 })
+<<<<<<< HEAD
 export class StreamComponent {
     jugachiDescription = 'jugachis description. yup';
 
@@ -61,3 +62,16 @@ export class DescriptionDialog {
         document.getElementById('description').innerHTML = this.description;
     }
 }
+=======
+export class StreamComponent 
+{   
+    scheduleOnLoad()
+    {
+      var iframe = document.getElementById("twitch-frame"); // working
+      var element = iframe.getElementsByTagName("NAV"); // not getting shit hecc
+      // trying to remove the <nav><nav/> and <footer><footer/>
+      console.log(iframe);
+      console.log(element);
+    }
+}
+>>>>>>> master
