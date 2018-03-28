@@ -43,21 +43,10 @@ h1 {
     text-shadow: rgb(22, 22, 56) 3px 3px 0;
 }
 
-<<<<<<< HEAD
 .schedule-frame {
     height: 680px;
     width: 450px;
     overflow: hidden;
-=======
-.row-header * {
-    font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
-    font-size: 32px;
-    color: rgb(252, 70, 70);
-    text-shadow: rgb(22, 22, 56) 3px 3px 0;
-    padding-bottom: 10px;
-    letter-spacing: 8px;
-    padding-top: 10px;
->>>>>>> master
 }
 
 .schedule {
