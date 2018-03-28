@@ -11,8 +11,8 @@ import { OverlayContainer } from '@angular/cdk/overlay';
 import { MaterialImportModule } from './material-import.module';
 
 import { AppComponent } from './components/app.component';
-import { AboutComponent, DescriptionDialog } from './components/about.component';
-import { StreamComponent } from './components/stream.component';
+import { AboutComponent, } from './components/about.component';
+import { StreamComponent, DescriptionDialog } from './components/stream.component';
 
 @NgModule({
   declarations: [
@@ -34,10 +34,8 @@ import { StreamComponent } from './components/stream.component';
   entryComponents: [],
   bootstrap: [AppComponent, AboutComponent, StreamComponent, DescriptionDialog]
 })
-export class AppModule 
-{
-    constructor(overlayContainer: OverlayContainer) 
-    {
+export class AppModule {
+    constructor(overlayContainer: OverlayContainer) {
         overlayContainer.getContainerElement()
             .classList.add('app-dark-theme');
     }
