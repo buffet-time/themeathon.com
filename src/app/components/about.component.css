@@ -26,14 +26,14 @@
     text-align: center;
     width: 840px;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    margin: 25px 525px;
+    margin: 25px 28%;
 }
 
 .about-thm {
     text-align: center;
     width: 840px;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    margin: 25px 535px;
+    margin: 25px 28%;
 }
 
 h1 {
@@ -52,9 +52,9 @@ h1 {
 .schedule {
     width: 450px;
     height: 680px;
-    position: absolute;
-    right: 60px;
-    top: 90px;
+    float: right;
+    margin-right: 60px;
+    margin-top: 60px;
 }
 
 .twitch {
@@ -63,9 +63,55 @@ h1 {
     top: 135px;
     left: 25px;
 }
+.twitch-player {
+    width: 475px;
+    height: 300px;
+}
 
 #save-children {
     position: absolute;
     left: 120px;
     top: 460px;
+}
+
+@media (max-width: 1730px) {
+    .about-stc {
+        margin-left: 26%;
+    }
+    .about-thm {
+        margin-left: 26%;
+    }
+    .schedule {
+        height: 725px;
+        width: 375px;
+    }
+    .schedule-frame {
+        height: 725px;
+        width: 375px;
+    }
+    .twitch-player {
+        width: 400px;
+        height: 250px;
+    }
+    .twitch {
+        width: 400px;
+        height: 250px;
+    }
+    #save-children {
+        left: 75px;
+    }
+}
+@media (max-width: 1600px) {
+    .twitch-player {
+        width: 375px;
+        height: 200px;
+    }
+    .twitch {
+        width: 375px;
+        height: 200px;
+    }
+    #save-children {
+        top: 400px;
+        left: 65px;
+    }
 }
