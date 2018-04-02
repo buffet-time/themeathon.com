@@ -78,3 +78,15 @@ h1 {
 	text-shadow: rgb(22, 22, 56) 3px 3px 0;
 	letter-spacing: 5px;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.second-staff {
+		float: right;
+		position: absolute;
+		right: 430px;
+		margin-right: 0;
+	}
+	h1 {
+		margin-left: 500px;
+	}
+}
