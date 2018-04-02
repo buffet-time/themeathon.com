@@ -1,14 +1,13 @@
 import {Component, Optional} from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material';
 
-
 @Component({
   selector: 'stream-component',
   templateUrl: './stream.component.html',
   styleUrls: ['./stream.component.css']
 })
 export class StreamComponent {
-    jugachiDescription = 'jugachis description. yup';
+    jugachiDescription = 'Jugachi Description';
 
     lordmausDescription = 'Themeathon is something I do want to invest a lot of time in as I personally see a bright future in it.' +
         'As for what I helped out with: Mostly things in the background that the viewer won\'t really notice that much.';
@@ -33,6 +32,8 @@ export class StreamComponent {
         'everything is correct. I also help moderating the Twitch channel and Discord server.' +
         'Themeathon is a very unique marathon and I haven\'t seen anything like it, it really is something special!';
 
+	foxDescription = 'Fox description.'
+
     constructor(private dialog: MatDialog) {}
 
     openSettings(description: string, name: string)
@@ -43,6 +44,7 @@ export class StreamComponent {
 
     }
 }
+
 
 @Component({
     selector: 'description-dialog',

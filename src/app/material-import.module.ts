@@ -23,5 +23,4 @@ import {
         MatDialogModule
     ]
 })
-export class MaterialImportModule {
-}
+export class MaterialImportModule {}

@@ -31,7 +31,6 @@ import { StreamComponent, DescriptionDialog } from './components/stream.componen
   providers: [
     {provide: MATERIAL_COMPATIBILITY_MODE, useValue: true},
   ],
-  entryComponents: [],
   bootstrap: [AppComponent, AboutComponent, StreamComponent, DescriptionDialog]
 })
 export class AppModule {
