@@ -1,17 +1,11 @@
-import { browser, element, by } from 'protractor';
+import { browser, by, element } from 'protractor';
 
-export class Material2SamplePage {
+export class AppPage {
   navigateTo() {
-    browser.waitForAngularEnabled(false); // do not wait for angular async
     return browser.get('/');
   }
 
-  getToolbarText() {
-    // return 'Angular Material2 Example App'
-    return element(by.name('toolbar-title')).getText();
-  }
-
-  getTitle() {
-    return browser.getTitle();
+  getParagraphText() {
+    return element(by.css('app-root h1')).getText();
   }
 }

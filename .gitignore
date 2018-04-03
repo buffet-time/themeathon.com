@@ -2,17 +2,12 @@
 
 # compiled output
 /dist
-/public
+/dist-server
 /tmp
 /out-tsc
 
 # dependencies
 /node_modules
-
-#firebase
-firebase.json
-.firebase-debug.txt
-.firebaserc
 
 # IDEs and editors
 /.idea
@@ -22,10 +17,6 @@ firebase.json
 *.launch
 .settings/
 *.sublime-workspace
-.vs
-*.ipr
-*.iml
-*.iws
 
 # IDE - VSCode
 .vscode/*
