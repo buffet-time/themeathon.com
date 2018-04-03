@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 
 import 'hammerjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MATERIAL_COMPATIBILITY_MODE } from '@angular/material';
 
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { MaterialImportModule } from './material-import.module';
@@ -27,9 +26,6 @@ import { StreamComponent, DescriptionDialog } from './components/stream.componen
     HttpModule,
     MaterialImportModule,
     BrowserAnimationsModule
-  ],
-  providers: [
-    {provide: MATERIAL_COMPATIBILITY_MODE, useValue: true},
   ],
   bootstrap: [AppComponent, AboutComponent, StreamComponent, DescriptionDialog]
 })

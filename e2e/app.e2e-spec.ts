@@ -1,20 +1,14 @@
-import { Material2SamplePage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('material2-sample App', () => {
-  let page: Material2SamplePage;
+describe('themeathon.com App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new Material2SamplePage();
+    page = new AppPage();
   });
 
-  it('should have title: "material2-sample" ', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitle()).toEqual('material2-sample');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
-
-  it('should display toolbar text: "Angular Material2 Example App" ', () => {
-    page.navigateTo();
-    expect(page.getToolbarText()).toEqual('Angular Material2 Example App');
-  });
-
 });
