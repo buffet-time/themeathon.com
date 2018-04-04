@@ -6,7 +6,7 @@
 .toolbar {
   /* background-color: rgba(0, 0, 0, 0.5); */
   top: 0px;
-	position: sticky; 
+	position: sticky;
   position: -webkit-sticky;
 	z-index: 50;
 }
@@ -30,10 +30,8 @@
 
 .themeathon-name {
   position: absolute;
-  width: 100vw;
   margin-top: 10px;
   margin-left: 41.5%;
-  letter-spacing: 3px;
 }
 
 .themeathon-name tr * {
@@ -45,6 +43,7 @@
   font-size: 32px;
   color: rgb(252, 70, 70);
   text-shadow: rgb(22, 22, 56) 3px 3px 0;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 1705px) {

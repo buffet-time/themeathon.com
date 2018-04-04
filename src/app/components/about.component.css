@@ -22,6 +22,11 @@
     color: rgb(252, 120, 120);
 }
 
+html {
+  width: 100%;
+  margin: 0;
+}
+
 .about-stc {
     text-align: center;
     width: 840px;
