@@ -23,7 +23,30 @@
 	}
 }
 
+@-webkit-keyframes mouse-hover {
+  from {border: solid 4px #333333;}
+  to {border: solid 4px rgb(252, 70, 70);}
+}
+
+@-webkit-keyframes snap-down {
+  0% {
+    width:  250px;
+    height: 250px;
+  }
+  50% {
+    width:  230px;
+    height: 230px;
+  }
+  100% {
+    width:  250px;
+    height: 250px;
+  }
+}
+
+
 .main-container {
+  display: flex;
+  flex-direction: row;
 	padding-top:  2%;
 	overflow: hidden;
 }
@@ -104,11 +127,14 @@ h1 {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
+  h1 {
+    margin-left: 38%;
+  }
   .first-staff {
-    margin: auto;
+    margin: 0 50%;
   }
 
   .second-staff {
-    margin: auto;
+    margin: 0 50%;
   }
 }

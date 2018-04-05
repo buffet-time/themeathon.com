@@ -1,10 +1,9 @@
 @font-face {
-  font-family: ADAM;
-  src: url(../../assets/ADAM.otf);
+  font-family: SAMURAI;
+  src: url(../../assets/samurai.ttf);
 }
 
 .toolbar {
-  /* background-color: rgba(0, 0, 0, 0.5); */
   top: 0;
 	position: sticky;
   position: -webkit-sticky;
@@ -32,21 +31,14 @@
 .themeathon-name {
   width: 100%;
 }
-.themeathon-name-tab {
-  margin: 28%;
-  padding-right: 25px;
-}
-
-.themeathon-name tr * {
-  margin-right: -8px;
-}
 
 .themeathon-name span {
-  font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
+  font-family: SAMURAI, Roboto, "Helvetica Neue", sans-serif;
   font-size: 32px;
-  color: #FC4646;
-  text-shadow: rgb(22, 22, 56) 3px 3px 0;
+  color: #ab2504;
   letter-spacing: 10px;
+  display: block;
+  margin: auto 26%;
 }
 
 @media (max-width: 1024px) {

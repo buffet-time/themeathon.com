@@ -1,20 +1,33 @@
 @font-face {
-    font-family: ADAM;
-    src: url(../../assets/ADAM.otf);
+    font-family: SAMURAI;
+    src: url(../../assets/samurai.ttf);
+}
+
+.flex {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/japan.png);
+  background-size: 100%;
+}
+
+.dates {
+  font-size: 30px;
+  margin-left: 25px;
+  float: left;
 }
 
 .section-header {
-    font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
+    font-family: SAMURAI, Roboto, "Helvetica Neue", sans-serif;
     font-size: 40px;
-    color: rgb(252, 70, 70);
-    text-shadow: rgb(22, 22, 56) 3px 3px 0;
+    color: #ab2504;
+    text-shadow: #fff 1.5px 1.5px 0;
     padding-bottom: 10px;
     letter-spacing: 8px;
     text-align: center;
 }
 
 .link {
-    color: rgb(252, 70, 70);
+    color: #ab2504;
     text-decoration: none;
 }
 
@@ -28,59 +41,40 @@ html {
 }
 
 .about-stc {
-    text-align: center;
-    width: 840px;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    margin: 25px 28%;
+  font-weight: bolder;
+  text-align: center;
+  color: #000;
+  float: right;
+  width: 600px;
+  margin-right: 25px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 .about-thm {
-    text-align: center;
-    width: 840px;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    margin: 25px 28%;
+  left: 25px;
+  bottom: 25px;
+  font-weight: bolder;
+  color: #000;
+  text-align: center;
+  position: absolute;
+  width: 600px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 h1 {
-    font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
+    font-family: SAMURAI, Roboto, "Helvetica Neue", sans-serif;
     text-align: center;
-    color: rgb(252, 70, 70);
-    text-shadow: rgb(22, 22, 56) 3px 3px 0;
-}
-
-.schedule-frame {
-    height: 680px;
-    width: 450px;
-    overflow: hidden;
-}
-
-.schedule {
-  width: 450px;
-  height: 680px;
-  float: right;
-  margin-left: 25px;
-  margin-right: 60px;
-  margin-top: 60px;
-}
-
-.twitch {
-    width: 475px;
-    float: left;
-    margin-top: 115px;
-    margin-left: 25px;
-}
-.twitch-player {
-    width: 475px;
-    height: 300px;
+    color: #ab2504;
+    text-shadow: #fff 1.5px 1.5px 0;
 }
 
 .children-pic {
-    position: absolute;
-    left: 120px;
-    top: 525px;
+  width: 100%;
 }
+
 #save-children {
   display: block;
+  margin: auto;
 }
 
 @media (max-width: 1730px) {
@@ -90,36 +84,11 @@ h1 {
     .about-thm {
         margin-left: 26%;
     }
-    .schedule {
-        height: 725px;
-        width: 375px;
-    }
-    .schedule-frame {
-      height: 725px;
-      width: 375px;
-      background-color: #FC4646;
-    }
-    .twitch-player {
-        width: 400px;
-        height: 250px;
-    }
-    .twitch {
-        width: 400px;
-        height: 250px;
-    }
     .children-pic {
         left: 75px;
     }
 }
 @media (max-width: 1600px) {
-    .twitch-player {
-        width: 375px;
-        height: 200px;
-    }
-    .twitch {
-        width: 375px;
-        height: 200px;
-    }
     .children-pic {
         top: 400px;
         left: 65px;
@@ -127,52 +96,17 @@ h1 {
 }
 
 @media (max-width: 1524px) {
-  .twitch-player {
-    width: 325px;
-    height: 200px;
-  }
   .children-pic {
     top: 400px;
     left: 35px;
-  }
-  .schedule {
-    height: 800px;
-    width: 375px;
-  }
-  .schedule-frame {
-    height: 800px;
-    width: 375px;
   }
 }
 
 
 @media (max-width: 1318px) {
-  .flex {
-    display: flex;
-    flex-direction: column;
-  }
-  .schedule {
-    order: 1;
-    width: 90%;
-    margin: 20px auto;
-  }
-  .schedule-frame {
-    width: 100%;
-  }
-  .twitch {
-    order: 2;
-    width: 80%;
-    height: 60%;
-    margin: 10px auto;
-  }
-  .twitch-player {
-    width: 100%;
-    height: 300%;
-  }
   .children-pic {
     position: relative;
     width: 100%;
-    order: 3;
     left: 0;
     margin-top: -25px;
   }
@@ -182,7 +116,6 @@ h1 {
   .about-thm {
     width: 75%;
     display: block;
-    order: 4;
   }
 
   .about-thm h1 {
@@ -198,7 +131,6 @@ h1 {
   .about-stc {
     width: 75%;
     display: block;
-    order: 5;
   }
   .about-stc * {
     display: block;
