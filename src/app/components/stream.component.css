@@ -23,24 +23,21 @@
 	}
 }
 
-html {
-  width: 100%;
-  margin: 0;
-}
-
 .main-container {
 	padding-top:  2%;
 	overflow: hidden;
 }
 
+.staff-section {
+  width: 100%;
+}
+
 .first-staff {
-	float: left;
-	margin-left: 425px;
-	margin-bottom: 50px;
+	margin: auto;
 }
 
 .second-staff {
-	margin-right: 28%;
+	margin: auto;
 }
 
 .caption * {
@@ -79,32 +76,39 @@ html {
 h1 {
 	font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
 	text-align: center;
-	color: rgb(252, 70, 70);
+	color: #FC4646;
 	text-shadow: rgb(22, 22, 56) 3px 3px 0;
 	letter-spacing: 5px;
 }
 
-@media (max-width: 958px) {
+@media (max-width: 1318px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    order: 1;
+  }
 	.first-staff {
-		position: absolute;
-		top: 2350px;
-		left: -225px;
+    order: 2;
 	}
 	.second-staff {
-		position: absolute;
-		top: 3050px;
-		left: 200px;
+    order: 3;
 	}
 }
 
+@media (max-width: 500px) {
+  .staff-section {
+    display: none;
+  }
+}
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-	.second-staff {
-		float: right;
-		position: absolute;
-		right: 430px;
-		margin-right: 0;
-	}
-	h1 {
-		margin-left: 500px;
-	}
+  .first-staff {
+    margin: auto;
+  }
+
+  .second-staff {
+    margin: auto;
+  }
 }

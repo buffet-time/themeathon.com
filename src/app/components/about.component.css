@@ -55,28 +55,32 @@ h1 {
 }
 
 .schedule {
-    width: 450px;
-    height: 680px;
-    float: right;
-    margin-right: 60px;
-    margin-top: 60px;
+  width: 450px;
+  height: 680px;
+  float: right;
+  margin-left: 25px;
+  margin-right: 60px;
+  margin-top: 60px;
 }
 
 .twitch {
     width: 475px;
-    position: absolute;
-    top: 135px;
-    left: 25px;
+    float: left;
+    margin-top: 115px;
+    margin-left: 25px;
 }
 .twitch-player {
     width: 475px;
     height: 300px;
 }
 
-#save-children {
+.children-pic {
     position: absolute;
     left: 120px;
-    top: 460px;
+    top: 525px;
+}
+#save-children {
+  display: block;
 }
 
 @media (max-width: 1730px) {
@@ -91,8 +95,9 @@ h1 {
         width: 375px;
     }
     .schedule-frame {
-        height: 725px;
-        width: 375px;
+      height: 725px;
+      width: 375px;
+      background-color: #FC4646;
     }
     .twitch-player {
         width: 400px;
@@ -102,7 +107,7 @@ h1 {
         width: 400px;
         height: 250px;
     }
-    #save-children {
+    .children-pic {
         left: 75px;
     }
 }
@@ -115,44 +120,90 @@ h1 {
         width: 375px;
         height: 200px;
     }
-    #save-children {
+    .children-pic {
         top: 400px;
         left: 65px;
     }
 }
 
-@media (max-width: 958px) {
-    .schedule {
-        position: absolute;
-        width: 80%;
-        left: 25px;
-        top: 35px;
-    }
-    .schedule-frame {
-        width: 900px;
-    }
-    .twitch {
-        width: 80%;
-        height: 500px;
-        top: 850px;
-        left: 85px;
-    }
-    .twitch-player {
-        width: 100%;
-        height: 500px;
-    }
-    #save-children {
-        top: 1375px;
-        left: 325px;
-    }
-    .about-thm {
-        position: absolute;
-        top: 1600px;
-        left: -190px;
-    }
-    .about-stc {
-        position: absolute;
-        top: 1850px;
-        left: -190px;
-    }
+@media (max-width: 1524px) {
+  .twitch-player {
+    width: 325px;
+    height: 200px;
+  }
+  .children-pic {
+    top: 400px;
+    left: 35px;
+  }
+  .schedule {
+    height: 800px;
+    width: 375px;
+  }
+  .schedule-frame {
+    height: 800px;
+    width: 375px;
+  }
+}
+
+
+@media (max-width: 1318px) {
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .schedule {
+    order: 1;
+    width: 90%;
+    margin: 20px auto;
+  }
+  .schedule-frame {
+    width: 100%;
+  }
+  .twitch {
+    order: 2;
+    width: 80%;
+    height: 60%;
+    margin: 10px auto;
+  }
+  .twitch-player {
+    width: 100%;
+    height: 300%;
+  }
+  .children-pic {
+    position: relative;
+    width: 100%;
+    order: 3;
+    left: 0;
+    margin-top: -25px;
+  }
+  #save-children {
+    margin: auto;
+  }
+  .about-thm {
+    width: 75%;
+    display: block;
+    order: 4;
+  }
+
+  .about-thm h1 {
+    margin-top: 400px;
+  }
+
+  .about-thm * {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: -33%;
+  }
+  .about-stc {
+    width: 75%;
+    display: block;
+    order: 5;
+  }
+  .about-stc * {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: -33%;
+  }
 }

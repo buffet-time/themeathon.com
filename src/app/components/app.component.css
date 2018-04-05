@@ -5,10 +5,11 @@
 
 .toolbar {
   /* background-color: rgba(0, 0, 0, 0.5); */
-  top: 0px;
+  top: 0;
 	position: sticky;
   position: -webkit-sticky;
 	z-index: 50;
+  width: 100%;
 }
 
 .social-media {
@@ -29,40 +30,33 @@
 }
 
 .themeathon-name {
-  position: absolute;
-  margin-top: 10px;
-  margin-left: 41.5%;
+  width: 100%;
+}
+.themeathon-name-tab {
+  margin: 28%;
+  padding-right: 25px;
 }
 
 .themeathon-name tr * {
-  margin-right: -22.5px;
+  margin-right: -8px;
 }
 
 .themeathon-name span {
   font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
   font-size: 32px;
-  color: rgb(252, 70, 70);
+  color: #FC4646;
   text-shadow: rgb(22, 22, 56) 3px 3px 0;
-  letter-spacing: 2px;
+  letter-spacing: 10px;
 }
 
-@media (max-width: 1705px) {
-  .themeathon-name {
-    margin-left: 41%;
-  }
-}
-
-@media (max-width: 1361px) {
-  .themeathon-name {
-    margin-left: 39%;
-  }
-}
-
-@media (max-width: 959px) {
-  .themeathon-name {
-    margin-left: 34%;
-  }
+@media (max-width: 1024px) {
   .social-media {
     margin: 0 15px;
+  }
+}
+
+@media (max-width: 832px) {
+  .social-media {
+    display: none;
   }
 }
