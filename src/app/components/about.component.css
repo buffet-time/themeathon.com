@@ -48,10 +48,21 @@ h1 {
     text-shadow: rgb(22, 22, 56) 3px 3px 0;
 }
 
-.schedule-frame {
-    height: 680px;
-    width: 450px;
-    overflow: hidden;
+.schedule table {
+  border-collapse: collapse;
+}
+
+.schedule table tr * {
+  padding: 8px 5px;
+  font-family: Roboto, "Helvetica Neue", sans-serif
+
+}
+.date {
+  background-color: #FC4646;
+}
+
+.categories * {
+  font-weight: bold;
 }
 
 .schedule {
@@ -61,12 +72,12 @@ h1 {
   margin-left: 25px;
   margin-right: 60px;
   margin-top: 60px;
+  overflow: scroll;
 }
 
 .twitch {
     width: 475px;
     float: left;
-    margin-top: 115px;
     margin-left: 25px;
 }
 .twitch-player {
@@ -93,11 +104,6 @@ h1 {
     .schedule {
         height: 725px;
         width: 375px;
-    }
-    .schedule-frame {
-      height: 725px;
-      width: 375px;
-      background-color: #FC4646;
     }
     .twitch-player {
         width: 400px;
@@ -139,10 +145,6 @@ h1 {
     height: 800px;
     width: 375px;
   }
-  .schedule-frame {
-    height: 800px;
-    width: 375px;
-  }
 }
 
 
@@ -155,9 +157,6 @@ h1 {
     order: 1;
     width: 90%;
     margin: 20px auto;
-  }
-  .schedule-frame {
-    width: 100%;
   }
   .twitch {
     order: 2;
