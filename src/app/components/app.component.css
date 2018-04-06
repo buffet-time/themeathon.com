@@ -49,6 +49,18 @@
   letter-spacing: 10px;
 }
 
+@media (max-width: 1425px) {
+  .themeathon-name-tab {
+    margin: 0 15%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .themeathon-name-tab {
+    margin: 0 1%;
+  }
+}
+
 @media (max-width: 1024px) {
   .social-media {
     margin: 0 15px;
@@ -61,8 +73,11 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
 	.themeathon-name {
 		display: none;
 	}
+    .social-media {
+      margin: 0 32px;
+    }
 }

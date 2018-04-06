@@ -189,11 +189,9 @@ h1 {
     margin: auto;
   }
   .about-thm {
-    width: 75%;
-    float: left;
+    width: 65%;
     display: block;
     order: 4;
-    margin: 25px 0;
   }
 
   .about-thm h1 {
@@ -204,7 +202,7 @@ h1 {
     display: block;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 33%;
+    margin-left: -33%;
   }
   .about-stc {
     width: 65%;
@@ -223,13 +221,13 @@ h1 {
   }
 
   .themeathon-name-tab {
-	padding-right: 25px;
+	margin: auto;
   }
-  
-  .themeathon-name tr * {
-	margin-right: -12px;
+
+  .themeathon-name tr span {
+	margin-left: -12px;
   }
-  
+
   .themeathon-name span {
 	font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
 	font-size: 32px;
@@ -263,7 +261,7 @@ h1 {
 	}
 }
 
-@media (min-width: 380px) {
+@media (min-width: 415px) {
 	.themeathon-name {
 	  display: none;
 	}
