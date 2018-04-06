@@ -7,7 +7,7 @@ import { MatDialog, MatDialogRef } from '@angular/material';
   styleUrls: ['./stream.component.css']
 })
 export class StreamComponent {
-    jugachiDescription = 'Jugachi Description';
+    jugachiDescription = 'Founder and Creator of Themeathon.';
 
     lordmausDescription = 'Themeathon is something I do want to invest a lot of time in as I personally see a bright future in it.' +
         "As for what I helped out with: Mostly things in the background that the viewer won't really notice that much.";
