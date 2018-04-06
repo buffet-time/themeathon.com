@@ -13,6 +13,15 @@
     text-align: center;
 }
 
+a {
+  color: rgb(252, 70, 70);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(252, 120, 120);
+}
+
 .link {
     color: rgb(252, 70, 70);
     text-decoration: none;
@@ -212,7 +221,7 @@ h1 {
       height: 55vh;
     }
     .children-pic {
-      margin-top: -400px;
+      margin-top: -400px !important;
     }
   }
 }
