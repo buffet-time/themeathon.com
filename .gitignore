@@ -2,9 +2,9 @@
 
 # compiled output
 /dist
-/dist-server
 /tmp
 /out-tsc
+/public
 
 # dependencies
 /node_modules
@@ -17,6 +17,10 @@
 *.launch
 .settings/
 *.sublime-workspace
+/.vscode
+/.vs
+.editorconfig
+
 
 # IDE - VSCode
 .vscode/*
@@ -24,6 +28,11 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+#firebase
+firebase.json
+.firebase-debug.txt
+.firebaserc
 
 # misc
 /.sass-cache
