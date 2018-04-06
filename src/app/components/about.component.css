@@ -170,7 +170,7 @@ h1 {
   }
   .twitch {
     order: 2;
-    width: 85%;
+    width: 80%;
     height: 60%;
     margin: 10px auto;
   }
@@ -254,10 +254,10 @@ h1 {
 
 @media (max-width: 500px) {
 	.twitch {
-		width: 95%;
+		width: 90%;
 	}
 	.schedule {
-		width: 95%;
+		width: 85%;
 	}
 }
 
