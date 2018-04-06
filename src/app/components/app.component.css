@@ -56,7 +56,13 @@
 }
 
 @media (max-width: 832px) {
-  .social-media {
+  .name-text {
     display: none;
   }
+}
+
+@media (max-width: 380px) {
+	.themeathon-name {
+		display: none;
+	}
 }
