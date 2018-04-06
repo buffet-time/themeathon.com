@@ -80,6 +80,9 @@ h1 {
 	text-shadow: rgb(22, 22, 56) 3px 3px 0;
 	letter-spacing: 5px;
 }
+.mobile-staff {
+	display: none;
+}
 
 @media (max-width: 1318px) {
   .main-container {
@@ -98,8 +101,22 @@ h1 {
 }
 
 @media (max-width: 500px) {
-  .staff-section {
+  .first-staff {
     display: none;
+  }
+  .second-staff {
+    display: none;
+  }
+  .mobile-staff {
+  	display: table;
+    width: 100%;
+  }
+  .mobile-staff * {
+    margin: auto;
+  }
+  .staff-picture img {
+    display: block;
+    margin: auto;
   }
 }
 
