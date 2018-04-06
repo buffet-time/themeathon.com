@@ -170,7 +170,7 @@ h1 {
   }
   .twitch {
     order: 2;
-    width: 80%;
+    width: 85%;
     height: 60%;
     margin: 10px auto;
   }
@@ -218,6 +218,26 @@ h1 {
     margin-left: -33%;
   }
 
+  .themeathon-name {
+	width: 100%;
+  }
+
+  .themeathon-name-tab {
+	padding-right: 25px;
+  }
+  
+  .themeathon-name tr * {
+	margin-right: -12px;
+  }
+  
+  .themeathon-name span {
+	font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
+	font-size: 32px;
+	color: #FC4646;
+	text-shadow: rgb(22, 22, 56) 3px 3px 0;
+	letter-spacing: 5px;
+  }
+
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
     .twitch-player {
       height: 55vh;
@@ -233,3 +253,18 @@ h1 {
     margin-top: -50px;
   }
 }
+
+@media (max-width: 500px) {
+	.twitch {
+		width: 95%;
+	}
+	.schedule {
+		width: 95%;
+	}
+}
+
+@media (min-width: 380px) {
+	.themeathon-name {
+	  display: none;
+	}
+  }
