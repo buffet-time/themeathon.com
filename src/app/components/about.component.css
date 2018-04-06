@@ -190,8 +190,10 @@ h1 {
   }
   .about-thm {
     width: 75%;
+    float: left;
     display: block;
     order: 4;
+    margin: 25px 0;
   }
 
   .about-thm h1 {
@@ -202,10 +204,10 @@ h1 {
     display: block;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: -33%;
+    margin-left: 33%;
   }
   .about-stc {
-    width: 75%;
+    width: 65%;
     display: block;
     order: 5;
   }
