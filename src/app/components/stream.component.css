@@ -104,6 +104,9 @@ h1 {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
+  .staff-section {
+    width: 100vw;
+  }
   .first-staff {
     margin: auto;
   }

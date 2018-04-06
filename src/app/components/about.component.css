@@ -79,6 +79,7 @@ h1 {
     width: 475px;
     float: left;
     margin-left: 25px;
+    margin-top: 50px;
 }
 .twitch-player {
     width: 475px;
@@ -204,5 +205,20 @@ h1 {
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: -33%;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .twitch-player {
+      height: 55vh;
+    }
+    .children-pic {
+      margin-top: -400px;
+    }
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .children-pic {
+    margin-top: -50px;
   }
 }
