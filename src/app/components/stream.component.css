@@ -143,6 +143,35 @@ h1 {
 	}
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media (max-width: 500px) {
+  .first-staff {
+    display: none;
+  }
+  .second-staff {
+    display: none;
+  }
+  .mobile-staff {
+    display: table;
+    width: 100%;
+  }
+  .mobile-staff * {
+    margin: auto;
+  }
+  .staff-picture img {
+    display: block;
+    margin: auto;
+  }
+}
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .staff-section {
+    width: 100vw;
+  }
+  .first-staff {
+    margin: auto;
+  }
+
+  .second-staff {
+    margin: auto;
+  }
 }
