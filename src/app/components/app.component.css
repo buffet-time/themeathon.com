@@ -41,6 +41,12 @@
   margin: auto 26%;
 }
 
+@media (max-width: 1425px) {
+  .themeathon-name {
+    margin: 0 -15%;
+  }
+}
+
 @media (max-width: 1024px) {
   .social-media {
     margin: 0 15px;
