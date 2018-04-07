@@ -18,7 +18,7 @@
 }
 
 .social-media img {
-  fill: #ffffff;
+  fill: #fff;
   width: 32px;
   height: 32px;
 }
@@ -47,8 +47,17 @@
   }
 }
 
-@media (max-width: 832px) {
-  .social-media {
+@media (max-width: 500px) {
+  .themeathon-name {
     display: none;
+  }
+  .social-media {
+    margin: 0 28px;
+  }
+}
+
+@media (max-width: 350px) {
+  .social-media {
+    margin: 0 20px;
   }
 }

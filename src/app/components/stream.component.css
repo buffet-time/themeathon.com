@@ -44,10 +44,33 @@
 }
 
 
+
+.about-stc {
+  text-align: center;
+  color: #fff;
+  float: right;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.about-thm {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.link {
+  color: #FC4646;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(252, 120, 120);
+}
+
+
 .main-container {
   display: flex;
   flex-direction: row;
-	padding-top:  2%;
+  margin-top: -50px;
 	overflow: hidden;
 }
 
@@ -97,7 +120,7 @@
 }
 
 h1 {
-	font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
+  font-family: SAMURAI, Roboto, "Helvetica Neue", sans-serif;
 	text-align: center;
 	color: #FC4646;
 	text-shadow: rgb(22, 22, 56) 3px 3px 0;
@@ -120,21 +143,6 @@ h1 {
 	}
 }
 
-@media (max-width: 500px) {
-  .staff-section {
-    display: none;
-  }
-}
-
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-  h1 {
-    margin-left: 38%;
-  }
-  .first-staff {
-    margin: 0 50%;
-  }
 
-  .second-staff {
-    margin: 0 50%;
-  }
 }
