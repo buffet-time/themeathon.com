@@ -7,9 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent 
 {
-    stream: boolean = true;
-    about: boolean = false;
-
     navigateToDiscord() 
     {
       window.open("https://discordapp.com/invite/wd5GwXK");

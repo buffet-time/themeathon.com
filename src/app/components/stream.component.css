@@ -160,6 +160,7 @@ h1 {
 	letter-spacing: 5px;
   font-size: 45px;
 }
+
 h3 {
   font-family: SAMURAI, Roboto, "Helvetica Neue", sans-serif;
   text-align: center;
@@ -235,24 +236,34 @@ h3 {
   }
 }
 
-@media (max-width: 500px) {
-  #title-mobile {
-    display: block;
-  }
+@media (max-width: 740px) {
+	#crane {
+		position: absolute;
+		bottom: 280px;
+		right: -40px;
+		transform: scale(0.6, 0.6);
+	  }
+}
+
+@media (max-width: 680px) {
+	#title-mobile {
+	  display: block;
+	}
+}
+
+@media (max-width: 550px) {
   .about-thm {
     width: 90%;
-  }
-  #crane {
-    position: absolute;
-    bottom: 280px;
-    right: -40px;
-    transform: scale(0.7, 0.7);
   }
   .about-stc {
     width: 90%;
   }
   .staff-section {
     width: 90%;
+  }
+  .stc-img {
+	  height: 180px;
+	  width: 250px;
   }
 }
 
@@ -270,21 +281,19 @@ h3 {
 }
 
 @media (max-width: 370px) {
+	#title-mobile {
+		letter-spacing: 4px;
+		font-size: 36px;
+	}
 	h1 {
 		letter-spacing: 3px;
-		font-size: 18px;
+		font-size: 24px;
 	}
   .about-stc {
     height: 120%;
   }
 }
 
-@media (max-width: 360px ) {
-	.about-title {
-		letter-spacing: 2px;
-		font-size: 20px;
-	}
-}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   .first-staff {
     margin: auto;
