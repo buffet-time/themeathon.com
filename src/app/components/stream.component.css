@@ -160,9 +160,6 @@ h1 {
 	letter-spacing: 5px;
   font-size: 45px;
 }
-.mobile-staff {
-	display: none;
-}
 
 h3 {
   font-family: SAMURAI, Roboto, "Helvetica Neue", sans-serif;
@@ -298,9 +295,6 @@ h3 {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-  .staff-section {
-    width: 100vw;
-  }
   .first-staff {
     margin: auto;
   }

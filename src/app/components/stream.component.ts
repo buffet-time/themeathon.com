@@ -1,4 +1,4 @@
-import { Component, Optional } from '@angular/core';
+import {Component, Optional} from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material';
 
 @Component({
