@@ -64,7 +64,7 @@ export class DescriptionDialog
 
 	ngOnInit() 
 	{
-        document.getElementById('title').innerHTML = this.name;
-        document.getElementById('description').innerHTML = this.description;
+        document.getElementById('dialog-title').innerHTML = this.name;
+        document.getElementById('dialog-description').innerHTML = this.description;
     }
 }
