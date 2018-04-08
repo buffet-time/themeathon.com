@@ -10,13 +10,11 @@ import { OverlayContainer } from '@angular/cdk/overlay';
 import { MaterialImportModule } from './material-import.module';
 
 import { AppComponent } from './components/app.component';
-import { AboutComponent, } from './components/about.component';
 import { StreamComponent, DescriptionDialog } from './components/stream.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
     StreamComponent,
     DescriptionDialog
   ],
@@ -27,7 +25,8 @@ import { StreamComponent, DescriptionDialog } from './components/stream.componen
     MaterialImportModule,
     BrowserAnimationsModule
   ],
-  bootstrap: [AppComponent, AboutComponent, StreamComponent, DescriptionDialog]
+  bootstrap: [AppComponent,  StreamComponent ],
+  entryComponents: [DescriptionDialog]
 })
 export class AppModule {
     constructor(overlayContainer: OverlayContainer) {

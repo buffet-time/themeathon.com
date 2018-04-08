@@ -1,33 +1,29 @@
 <div [class.app-dark-theme]="true">
     <mat-sidenav-container fullscreen class="sidenav-container">
         <mat-toolbar class="toolbar">
-              <div class="social-media" id="discord" (click)="navigateToDiscord()">
-                <img src="../../assets/discord.png">
-              </div>
+			<div class="social-media" id="discord" (click)="navigateToDiscord()">
+				<img src="../../assets/discord.png">
+			</div>
 
-              <div class="social-media" (click)="navigateToTwitch()">
-                <img src="../../assets/twitch.png">
-              </div>
+			<div class="social-media" (click)="navigateToTwitch()">
+				<img src="../../assets/twitch.png">
+			</div>
 
-              <div class="social-media"(click)="navigateToTwitter()">
-                <img src="../../assets/twitter.png">
-              </div>
+			<div class="social-media"(click)="navigateToTwitter()">
+				<img src="../../assets/twitter.png">
+			</div>
 
-              <div class="social-media" (click)="navigateToYoutube()">
-                <img src="../../assets/youtube.png">
-              </div>
+			<div class="social-media" (click)="navigateToYoutube()">
+				<img src="../../assets/youtube.png">
+			</div>
 
-            <div class="themeathon-name">
-                <table class="themeathon-name-tab">
-                    <tr>
-                        <td><img src="/assets/themeathon.png" style="width: 65px; height: 65px;"></td>
-                        <td class="name-text"><span>hemeathon</span></td>
-                    </tr>
-                </table>
-            </div>
-        </mat-toolbar>
+			<div class="themeathon-name">
+				<div class="name-span">
+					<span>THEMEATHON</span>
+				</div>
+			</div>
+		</mat-toolbar>
 
-        <about-component></about-component>
         <stream-component></stream-component>
 
     </mat-sidenav-container>

@@ -23,13 +23,92 @@
 	}
 }
 
+@-webkit-keyframes mouse-hover {
+  from {border: solid 4px #333333;}
+  to {border: solid 4px rgb(252, 70, 70);}
+}
+
+@-webkit-keyframes snap-down {
+  0% {
+    width:  250px;
+    height: 250px;
+  }
+  50% {
+    width:  230px;
+    height: 230px;
+  }
+  100% {
+    width:  250px;
+    height: 250px;
+  }
+}
+
+#title-mobile {
+  display: none;
+}
+
+.about-stc {
+  background-color: #777;
+  order: 1;
+  text-align: center;
+  color: #fff;
+  float: right;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  height: 100vh;
+  width: 34%;
+  margin: 24px;
+  padding: 12px;
+}
+
+.about-thm {
+  background-color: #777;
+  display: flex;
+  flex-direction: row;
+  order: 2;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 24px;
+  padding: 12px;
+  height: 42%;
+  width: 34%;
+}
+
+.about-thm * {
+  padding: 0 18px;
+}
+
+.about-thm p {
+  order: 1;
+  width: 50%;
+}
+
+#crane {
+  position: absolute;
+  bottom: 150px;
+}
+
+.link {
+  color: #FC4646;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(252, 120, 120);
+}
+
 .main-container {
-	padding-top:  2%;
+	display: flex;
+	flex-direction: row;
 	overflow: hidden;
 }
 
 .staff-section {
-  width: 100%;
+  background-color: #777;
+  margin: 24px;
+  padding: 12px;
+  width: 34%;
+  order: 3;
 }
 
 .first-staff {
@@ -43,15 +122,15 @@
 .caption * {
 	font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
 	text-align: center;
-	color: rgb(252, 70, 70);
-	text-shadow: rgb(22, 22, 56) 3px 3px 0;
+	color: #fff ;
+	text-shadow: #000 3px 3px 0;
 }
 
 .row-header * {
 	font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
 	font-size: 32px;
-	color: rgb(252, 70, 70);
-	text-shadow: rgb(22, 22, 56) 3px 3px 0;
+	color: #fff;
+	text-shadow: #000 3px 3px 0;
 	padding-bottom: 10px;
 	letter-spacing: 8px;
 }
@@ -74,33 +153,70 @@
 }
 
 h1 {
-	font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
+  font-family: SAMURAI, Roboto, "Helvetica Neue", sans-serif;
 	text-align: center;
-	color: #FC4646;
-	text-shadow: rgb(22, 22, 56) 3px 3px 0;
+	color: #fff;
+	text-shadow: #000 3px 3px 0;
 	letter-spacing: 5px;
-}
-.mobile-staff {
-	display: none;
+  font-size: 45px;
 }
 
-@media (max-width: 1318px) {
+h3 {
+  font-family: SAMURAI, Roboto, "Helvetica Neue", sans-serif;
+  text-align: center;
+  color: #fff;
+  text-shadow: #000 3px 3px 0;
+  letter-spacing: 3px;
+  font-size: 28px;
+}
+
+.mobile-staff {
+  display: none;
+}
+
+@media (max-width: 1680px) {
+  .about-stc {
+    height: 120%;
+  }
+  .staff-section {
+    width: 36%;
+  }
+}
+
+@media (max-width: 1512px) {
   .main-container {
-    display: flex;
     flex-direction: column;
   }
   h1 {
     order: 1;
   }
-	.first-staff {
+  .about-thm {
+    width: 55%;
     order: 2;
-	}
-	.second-staff {
+    margin: 25px auto;
+  }
+
+  #crane {
+    position: absolute;
+    bottom: 150px;
+  }
+
+  .about-stc {
+    width: 55%;
     order: 3;
-	}
+    margin: 25px auto;
+  }
+	.staff-section {
+    order: 4;
+    width: 55%;
+    margin: 25px auto;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 970px) {
+  .staff-section {
+    width: 55%;
+  }
   .first-staff {
     display: none;
   }
@@ -108,7 +224,7 @@ h1 {
     display: none;
   }
   .mobile-staff {
-  	display: table;
+    display: table;
     width: 100%;
   }
   .mobile-staff * {
@@ -120,14 +236,68 @@ h1 {
   }
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  .staff-section {
-    width: 100vw;
+@media (max-width: 740px) {
+	#crane {
+		position: absolute;
+		bottom: 280px;
+		right: -40px;
+		transform: scale(0.6, 0.6);
+	  }
+}
+
+@media (max-width: 680px) {
+	#title-mobile {
+	  display: block;
+	}
+}
+
+@media (max-width: 550px) {
+  .about-thm {
+    width: 90%;
   }
+  .about-stc {
+    width: 90%;
+  }
+  .staff-section {
+    width: 90%;
+  }
+  .stc-img {
+	  height: 180px;
+	  width: 250px;
+  }
+}
+
+@media (max-width: 465px) {
+	.about-title {
+		letter-spacing: 3px;
+		font-size: 25px;
+	}
+}
+
+@media (max-width: 414px){
+	.children-pic {
+		display: none;
+	}
+}
+
+@media (max-width: 370px) {
+	#title-mobile {
+		letter-spacing: 4px;
+		font-size: 36px;
+	}
+	h1 {
+		letter-spacing: 3px;
+		font-size: 24px;
+	}
+  .about-stc {
+    height: 120%;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
   .first-staff {
     margin: auto;
   }
-
   .second-staff {
     margin: auto;
   }

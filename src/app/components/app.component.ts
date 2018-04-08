@@ -7,9 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent 
 {
-    stream: boolean = true;
-    about: boolean = false;
-
     navigateToDiscord() 
     {
       window.open("https://discordapp.com/invite/wd5GwXK");
@@ -28,17 +25,5 @@ export class AppComponent
     navigateToYoutube() 
     {
       window.open("https://www.youtube.com/channel/UCoeWJ8x6jM_tN5AnBqLzQfg");
-    }
-
-    toStream()
-    {
-      this.stream = true;
-      this.about = false;
-    }
-
-    toAbout()
-    {
-      this.stream = false;
-      this.about = true;
     }
 }
