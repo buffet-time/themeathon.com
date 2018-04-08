@@ -29,16 +29,4 @@ export class AppComponent
     {
       window.open("https://www.youtube.com/channel/UCoeWJ8x6jM_tN5AnBqLzQfg");
     }
-
-    toStream()
-    {
-      this.stream = true;
-      this.about = false;
-    }
-
-    toAbout()
-    {
-      this.stream = false;
-      this.about = true;
-    }
 }
