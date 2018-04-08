@@ -84,9 +84,8 @@
 }
 
 #crane {
-  margin-top: -60%;
-  order: 2;
-  float: right;
+  position: absolute;
+  bottom: 150px;
 }
 
 .link {
@@ -185,7 +184,8 @@ h3 {
   }
 
   #crane {
-    margin-top: -37%;
+    position: absolute;
+    bottom: 150px;
   }
 
   .about-stc {
