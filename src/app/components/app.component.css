@@ -12,6 +12,7 @@
   background-color: #000;
 	z-index: 9999;
   background-repeat: no-repeat;
+  overflow: hidden;
   }
 
 .toolbar {
@@ -40,7 +41,7 @@
 }
 
 .themeathon-name {
-  width: 100%;
+  width: auto;
 }
 
 .themeathon-name span {
@@ -49,7 +50,7 @@
   color: #fff;
   letter-spacing: 10px;
   display: block;
-  margin: auto 26%;
+  margin: auto 38 %;
 }
 
 @media (max-width: 1425px) {
