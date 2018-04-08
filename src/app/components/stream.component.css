@@ -160,6 +160,9 @@ h1 {
 	letter-spacing: 5px;
   font-size: 45px;
 }
+.mobile-staff {
+	display: none;
+}
 
 h3 {
   font-family: SAMURAI, Roboto, "Helvetica Neue", sans-serif;
@@ -213,10 +216,14 @@ h3 {
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 970px) {
   .staff-section {
     width: 55%;
   }
+=======
+@media (max-width: 500px) {
+>>>>>>> master
   .first-staff {
     display: none;
   }
@@ -224,7 +231,11 @@ h3 {
     display: none;
   }
   .mobile-staff {
+<<<<<<< HEAD
     display: table;
+=======
+  	display: table;
+>>>>>>> master
     width: 100%;
   }
   .mobile-staff * {
@@ -234,6 +245,7 @@ h3 {
     display: block;
     margin: auto;
   }
+<<<<<<< HEAD
 }
 
 @media (max-width: 740px) {
@@ -292,9 +304,14 @@ h3 {
   .about-stc {
     height: 120%;
   }
+=======
+>>>>>>> master
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
+  .staff-section {
+    width: 100vw;
+  }
   .first-staff {
     margin: auto;
   }

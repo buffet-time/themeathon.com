@@ -7,7 +7,11 @@ import { MatDialog, MatDialogRef } from '@angular/material';
   styleUrls: ['./stream.component.css']
 })
 export class StreamComponent {
+<<<<<<< HEAD
 	jugachiDescription = "My name is Jugachi and I'm the founder of Themeathon. " +
+=======
+    jugachiDescription = "My name is Jugachi and I'm the founder of Themeathon. " +
+>>>>>>> master
 		"It all started back in 2016 when I had a silly idea for a charity marathon and that silly idea created something special. " +
 		"I really like that every marathon we have held has had a unique theme. This is something that never has been done before!";
 
@@ -19,7 +23,11 @@ export class StreamComponent {
         'can accomplish great things with the right amount of effort!';
 
     buffetDescription = "I'm Buffet Time, I'm one of the Website developers so I made what you\'re using right now lol, " +
+<<<<<<< HEAD
         "I'm a very big fan of the non copy paste feel of Themeathon and also the great charity.";
+=======
+        "I'm very big fan of the non copy paste feel of Themeathon and also the great charity.";
+>>>>>>> master
 
     konasumiDescription = "I've been participating in Themeathon since their first online event, " +
         "and now I'm working on the moderation team.";
@@ -34,11 +42,19 @@ export class StreamComponent {
         'everything is correct. I also help moderating the Twitch channel and Discord server. ' +
         "Themeathon is a very unique marathon and I haven't seen anything like it, it really is something special!";
 
+<<<<<<< HEAD
 	foxDescription = 'Good day ladies and gentlemen and that colorful rainbow in between, my name is Luka “Fox van Black” Wilde, ' +
 		'but people usually call me Fox. I am one of the hosts for Themathon, and head of the twitch mod team. ' +
 		'My duties are entertaining the viewers between runs and leading the twitch mod team which will uphold order in the chat, I am also the ' +
 		'lovable asshole of the team roasting everyone when the situation is right, or they just don’t deserve it any other way. ' +
 		'I hope to see you all during the marathon and wish you a good remaining day. ' +
+=======
+	foxDescription = 'Good day ladies and gentlemen and that colorful rainbow in between, my name is Luka “Fox van Black” Wilde, but people usually call me Fox. ' +
+		'I am one of the hosts for Themathon, and head of the twitch mod team. ' +
+		'My duties are entertaining the viewers between runs and leading the twitch mod team which will uphold order in the chat, I am also the ' +
+		'lovable asshole of the team roasting everyone when the situation is right, or they just don’t deserve it any other way. ' +
+		'I hope to see you all during the marathon and wish you a good remaining day.' +
+>>>>>>> master
 		'This is Fox signing out.'
 
     constructor(private dialog: MatDialog) {}

@@ -1,4 +1,5 @@
 @font-face {
+<<<<<<< HEAD
 	font-family: SAMURAI;
 	src: url(../../assets/samurai.ttf);
   }
@@ -21,6 +22,71 @@
 	width: 100%;
   }
   
+=======
+  font-family: ADAM;
+  src: url(../../assets/ADAM.otf);
+}
+
+.toolbar {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  top: 0;
+	position: sticky;
+  position: -webkit-sticky;
+	z-index: 50;
+  width: 100%;
+}
+
+.social-media {
+  padding-top: 6px;
+  margin: 0 25px;
+  cursor: pointer;
+}
+
+.social-media img {
+  fill: #ffffff;
+  width: 32px;
+  height: 32px;
+}
+
+.social-media-text {
+  float: right;
+  margin-left: 6px;
+}
+
+.themeathon-name {
+  width: 100%;
+}
+.themeathon-name-tab {
+  margin: 0 28%;
+  padding-right: 25px;
+}
+
+.themeathon-name tr * {
+  margin-right: -8px;
+}
+
+.themeathon-name span {
+  font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 32px;
+  color: #FC4646;
+  text-shadow: rgb(22, 22, 56) 3px 3px 0;
+  letter-spacing: 10px;
+}
+
+@media (max-width: 1425px) {
+  .themeathon-name-tab {
+    margin: 0 15%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .themeathon-name-tab {
+    margin: 0 1%;
+  }
+}
+
+@media (max-width: 1024px) {
+>>>>>>> master
   .social-media {
 	padding-top: 6px;
 	margin: 0 25px;
@@ -81,6 +147,7 @@
 	  }
   }
 
+<<<<<<< HEAD
   @media (max-width: 680px) {
 	.themeathon-name {
 		display: none;
@@ -92,3 +159,19 @@
 	  margin: 0 20px;
 	}
   }
+=======
+@media (max-width: 832px) {
+  .name-text {
+    display: none;
+  }
+}
+
+@media (max-width: 414px) {
+	.themeathon-name {
+		display: none;
+	}
+    .social-media {
+      margin: 0 7%;
+    }
+}
+>>>>>>> master
