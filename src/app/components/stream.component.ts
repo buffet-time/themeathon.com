@@ -1,12 +1,13 @@
-import {Component, Optional} from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material';
+import {Component, Optional, Inject} from '@angular/core';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 
 @Component({
   selector: 'stream-component',
   templateUrl: './stream.component.html',
   styleUrls: ['./stream.component.css']
 })
-export class StreamComponent {
+export class StreamComponent 
+{
 	jugachiDescription = "My name is Jugachi and I'm the founder of Themeathon. " +
 		"It all started back in 2016 when I had a silly idea for a charity marathon and that silly idea created something special. " +
 		"I really like that every marathon we have held has had a unique theme. This is something that never has been done before!";
@@ -40,14 +41,14 @@ export class StreamComponent {
 		'lovable asshole of the team roasting everyone when the situation is right, or they just don’t deserve it any other way. ' +
 		'I hope to see you all during the marathon and wish you a good remaining day. ' +
 		'This is Fox signing out.'
-
+		
     constructor(private dialog: MatDialog) {}
 
     openSettings(description: string, name: string)
     {
-        let dialogRef:MatDialogRef<DescriptionDialog> = this.dialog.open(DescriptionDialog);
-        dialogRef.componentInstance.description = description;
-        dialogRef.componentInstance.name = name;
+		let dialogRef = this.dialog.open(DescriptionDialog, {
+			data: { description: description, name: name }
+		});
     }
 }
 
@@ -59,14 +60,12 @@ export class StreamComponent {
 })
 export class DescriptionDialog 
 {
-    description: string;
-    name: string;
-
-    constructor(@Optional() public dialogRef: MatDialogRef<DescriptionDialog>) {}
+	constructor(@Optional() public dialogRef: MatDialogRef<DescriptionDialog>, 
+	@Inject(MAT_DIALOG_DATA) public data: any) {}
 
 	ngOnInit() 
 	{
-        document.getElementById('dialog-title').innerHTML = this.name;
-        document.getElementById('dialog-description').innerHTML = this.description;
+        document.getElementById('dialog-title').innerHTML = this.data.name;
+        document.getElementById('dialog-description').innerHTML = this.data.description;
     }
 }
