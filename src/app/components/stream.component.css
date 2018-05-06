@@ -153,21 +153,21 @@
 }
 
 h1 {
-  font-family: SAMURAI, Roboto, "Helvetica Neue", sans-serif;
+	font-family: SAMURAI, Roboto, "Helvetica Neue", sans-serif;
 	text-align: center;
 	color: #fff;
 	text-shadow: #000 3px 3px 0;
 	letter-spacing: 5px;
-  font-size: 45px;
+	font-size: 45px;
 }
 
 h3 {
-  font-family: SAMURAI, Roboto, "Helvetica Neue", sans-serif;
-  text-align: center;
-  color: #fff;
-  text-shadow: #000 3px 3px 0;
-  letter-spacing: 3px;
-  font-size: 28px;
+	font-family: SAMURAI, Roboto, "Helvetica Neue", sans-serif;
+	text-align: center;
+	color: #fff;
+	text-shadow: #000 3px 3px 0;
+	letter-spacing: 3px;
+	font-size: 28px;
 }
 
 .mobile-staff {

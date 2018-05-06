@@ -1,4 +1,4 @@
-import {Component, Optional, Inject} from '@angular/core';
+import { Component, Optional, Inject } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 
 @Component({
@@ -46,7 +46,8 @@ export class StreamComponent
 
     openSettings(description: string, name: string)
     {
-		let dialogRef = this.dialog.open(DescriptionDialog, {
+		let dialogRef = this.dialog.open(DescriptionDialog, 
+		{
 			data: { description: description, name: name }
 		});
     }
@@ -54,7 +55,6 @@ export class StreamComponent
 
 
 @Component({
-    selector: 'description-dialog',
     templateUrl: '../dialogs/staff.description.dialog.html',
     styleUrls: ['../dialogs/staff.description.dialog.css']
 })
@@ -62,10 +62,4 @@ export class DescriptionDialog
 {
 	constructor(@Optional() public dialogRef: MatDialogRef<DescriptionDialog>, 
 	@Inject(MAT_DIALOG_DATA) public data: any) {}
-
-	ngOnInit() 
-	{
-        document.getElementById('dialog-title').innerHTML = this.data.name;
-        document.getElementById('dialog-description').innerHTML = this.data.description;
-    }
 }
