@@ -199,6 +199,7 @@ h3 {
   #crane {
     position: absolute;
     bottom: 150px;
+    right: 100px;
   }
 
   .about-stc {
