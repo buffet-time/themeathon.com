@@ -119,6 +119,10 @@
 	margin: auto;
 }
 
+.third-staff {
+    margin: auto;
+}
+
 .caption * {
 	font-family: ADAM, Roboto, "Helvetica Neue", sans-serif;
 	text-align: center;
@@ -300,6 +304,9 @@ h3 {
     margin: auto;
   }
   .second-staff {
+    margin: auto;
+  }
+  .third-staff {
     margin: auto;
   }
 }

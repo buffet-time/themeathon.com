@@ -40,7 +40,13 @@ export class StreamComponent
 		'My duties are entertaining the viewers between runs and leading the twitch mod team which will uphold order in the chat, I am also the ' +
 		'lovable asshole of the team roasting everyone when the situation is right, or they just don’t deserve it any other way. ' +
 		'I hope to see you all during the marathon and wish you a good remaining day. ' +
-		'This is Fox signing out.'
+		'This is Fox signing out.';
+
+	mergyDescription = 'No idea how i ended up here but Lordmau5 needed someone for the first Themeathon and i was available.\n' +
+        'As a speedrunner myself i appreciate the cause for every marathon benefitting charities.\n' +
+        'The memes are also nice.';
+
+	owlisDescription = 'bla bla bla bla bla';
 		
     constructor(private dialog: MatDialog) {}
 
