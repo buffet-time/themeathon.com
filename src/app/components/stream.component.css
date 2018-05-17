@@ -245,12 +245,20 @@ h3 {
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 1120px) {
+    #crane {
+        position: absolute;
+        bottom: 220px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 750px) {
 	#crane {
 		position: absolute;
 		bottom: 280px;
-		right: -40px;
-		transform: scale(0.6, 0.6);
+		right: -25px;
+        transform: scale(.8, .8);
 	  }
 }
 
@@ -258,6 +266,13 @@ h3 {
 	#title-mobile {
 	  display: block;
 	}
+    #crane {
+        display: none;
+    }
+    .about-thm p {
+        width: 90%;
+        margin-left: -5px;
+    }
 }
 
 @media (max-width: 550px) {
