@@ -54,11 +54,12 @@
   color: #fff;
   float: right;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  height: 100vh;
+  height: 100%;
   width: 34%;
   margin: 24px;
   padding: 12px;
 }
+
 
 .about-thm {
   background-color: #777;
