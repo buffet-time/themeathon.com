@@ -228,6 +228,9 @@ h3 {
   .second-staff {
     display: none;
   }
+  .third-staff {
+    display: none;
+  }
   .mobile-staff {
     display: table;
     width: 100%;
