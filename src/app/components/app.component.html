@@ -1,62 +1,30 @@
 <div [class.app-dark-theme]="true">
-    <!-- <mat-sidenav-container fullscreen class="sidenav-container"> -->
-    <!-- <mat-toolbar class="toolbar"> -->
-    <!-- <div class="social-media" id="discord" (click)="navigateToDiscord()"> -->
-    <!-- <img src="../../assets/discord.png"> -->
-    <!-- </div> -->
-    <!--  -->
-    <!-- <div class="social-media" (click)="navigateToTwitch()"> -->
-    <!-- <img src="../../assets/twitch.png"> -->
-    <!-- </div> -->
-    <!--  -->
-    <!-- <div class="social-media" (click)="navigateToTwitter()"> -->
-    <!-- <img src="../../assets/twitter.png"> -->
-    <!-- </div> -->
-    <!--  -->
-    <!-- <div class="social-media" (click)="navigateToYoutube()"> -->
-    <!-- <img src="../../assets/youtube.png"> -->
-    <!-- </div> -->
-    <!--  -->
-    <!-- <div class="themeathon-name"> -->
-    <!-- <div class="name-span"> -->
-    <!-- <span>THEMEATHON</span> -->
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- </mat-toolbar> -->
-    <!--  -->
-    <!-- <stream-component></stream-component> -->
-    <!--  -->
-    <!-- </mat-sidenav-container> -->
+    <mat-sidenav-container fullscreen class="sidenav-container">
+        <mat-toolbar class="toolbar">
+			<div class="social-media" id="discord" (click)="navigateToDiscord()">
+				<img src="../../assets/discord.png">
+			</div>
 
+			<div class="social-media" (click)="navigateToTwitch()">
+				<img src="../../assets/twitch.png">
+			</div>
 
+			<div class="social-media"(click)="navigateToTwitter()">
+				<img src="../../assets/twitter.png">
+			</div>
 
-    <div class="background">
+			<div class="social-media" (click)="navigateToYoutube()">
+				<img src="../../assets/youtube.png">
+			</div>
 
-        <div class="toolbar">
-            <div class="social-media-container">
-                <div class="social-media" id="discord" (click)="navigateToDiscord()">
-                    <img src="../../assets/discord.png">
-                </div>
+			<div class="themeathon-name">
+				<div class="name-span">
+					<span>THEMEATHON</span>
+				</div>
+			</div>
+		</mat-toolbar>
 
-                <div class="social-media" (click)="navigateToTwitch()">
-                    <img src="../../assets/twitch.png">
-                </div>
-
-                <div class="social-media" (click)="navigateToTwitter()">
-                    <img src="../../assets/twitter.png">
-                </div>
-
-                <div class="social-media" (click)="navigateToYoutube()">
-                    <img src="../../assets/youtube.png">
-                </div>
-            </div>
-
-            <div class="themeathon-name">
-                <div class="name-span">
-                    <span>THEMEATHON</span>
-                </div>
-            </div>
-        </div>
         <stream-component></stream-component>
-    </div>
+
+    </mat-sidenav-container>
 </div>
