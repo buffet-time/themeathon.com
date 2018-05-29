@@ -5,17 +5,24 @@ import { HttpModule } from '@angular/http';
 
 import 'hammerjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { RouterModule, Routes } from '@angular/router';
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { MaterialImportModule } from './material-import.module';
 
 import { AppComponent } from './components/app.component';
 import { StreamComponent, DescriptionDialog } from './components/stream.component';
+import { EventsComponent } from './components/events.component';
+
+const appRoutes: Routes = [
+	{ path: '', component: AppComponent},
+	{ path: 'events', component: EventsComponent }
+  ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    StreamComponent,
+	StreamComponent,
+	EventsComponent,
     DescriptionDialog
   ],
   imports: [
@@ -23,9 +30,13 @@ import { StreamComponent, DescriptionDialog } from './components/stream.componen
     FormsModule,
     HttpModule,
     MaterialImportModule,
-    BrowserAnimationsModule
+	BrowserAnimationsModule,
+	RouterModule.forRoot(
+		appRoutes,
+		{ enableTracing: true } // <-- debugging purposes only
+	  )
   ],
-  bootstrap: [AppComponent,  StreamComponent ],
+  bootstrap: [AppComponent,  StreamComponent, EventsComponent ],
   entryComponents: [DescriptionDialog]
 })
 export class AppModule {
