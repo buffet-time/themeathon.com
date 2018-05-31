@@ -14,7 +14,7 @@ import { StreamComponent, DescriptionDialog } from './components/stream.componen
 import { EventsComponent } from './components/events.component';
 
 const appRoutes: Routes = [
-	{ path: '', component: AppComponent},
+	{ path: '', component: StreamComponent},
 	{ path: 'events', component: EventsComponent }
   ];
 
@@ -32,11 +32,10 @@ const appRoutes: Routes = [
     MaterialImportModule,
 	BrowserAnimationsModule,
 	RouterModule.forRoot(
-		appRoutes,
-		{ enableTracing: true } // <-- debugging purposes only
+		appRoutes
 	  )
   ],
-  bootstrap: [AppComponent,  StreamComponent, EventsComponent ],
+  bootstrap: [ AppComponent ],
   entryComponents: [DescriptionDialog]
 })
 export class AppModule {
