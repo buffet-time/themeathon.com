@@ -50,7 +50,7 @@ export class StreamComponent
 		
     constructor(private dialog: MatDialog) {}
 
-    openSettings(description: string, name: string)
+    openDialog(description: string, name: string)
     {
 		let dialogRef = this.dialog.open(DescriptionDialog, 
 		{

@@ -11,7 +11,7 @@ import { MaterialImportModule } from './material-import.module';
 
 import { AppComponent } from './components/app.component';
 import { StreamComponent, DescriptionDialog } from './components/stream.component';
-import { EventsComponent } from './components/events.component';
+import { EventsComponent, EventsConfirmationDialog } from './components/events.component';
 
 const appRoutes: Routes = [
 	{ path: '', component: StreamComponent},
@@ -23,7 +23,8 @@ const appRoutes: Routes = [
     AppComponent,
 	StreamComponent,
 	EventsComponent,
-    DescriptionDialog
+	DescriptionDialog,
+	EventsConfirmationDialog
   ],
   imports: [
     BrowserModule,
@@ -36,7 +37,7 @@ const appRoutes: Routes = [
 	  )
   ],
   bootstrap: [ AppComponent ],
-  entryComponents: [DescriptionDialog]
+  entryComponents: [ DescriptionDialog, EventsConfirmationDialog ]
 })
 export class AppModule {
     constructor(overlayContainer: OverlayContainer) {

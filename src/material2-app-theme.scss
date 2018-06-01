@@ -3,7 +3,7 @@
 @include mat-core();
 
 $primary: mat-palette( $mat-grey, 900 );
-$accent:  mat-palette( $mat-pink, 700 );
+$accent:  mat-palette( $mat-red, 700 );
 $dark-theme:   mat-dark-theme( $primary, $accent );
 
 .app-dark-theme {

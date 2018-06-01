@@ -1,5 +1,52 @@
 <mat-card class="main-card">
-	form here<br>
-	asdfasdfafd<br>
-	asdfkjasfd<br>
+	<div class="title">
+		<h2>Themeathon - 3rd Party Event Submission</h2>
+	</div>
+	<br>
+
+	<form class="main-form">
+		<mat-form-field class="input" color="accent">
+			<input matInput #displayNameBox maxlength="30" placeholder="Display Name" type="text" 
+					[(ngModel)]="displayName" [ngModelOptions]="{standalone: true}">
+			<button mat-button *ngIf="displayName" matSuffix mat-icon-button aria-label="Clear" (click)="displayName=''">
+				<mat-icon>close</mat-icon>
+			</button>
+			<mat-hint align="start">Your display name</mat-hint>
+			<mat-hint align="end">{{displayNameBox.value.length}} / 30</mat-hint>
+		</mat-form-field>
+		<br>
+
+		<mat-form-field class="input" color="accent">
+			<input matInput #discordBox maxlength="30" placeholder="Discord Name" type="text" 
+					[(ngModel)]="discordName" [ngModelOptions]="{standalone: true}">
+			<button mat-button *ngIf="discordName" matSuffix mat-icon-button aria-label="Clear" (click)="discordName=''">
+				<mat-icon>close</mat-icon>
+			</button>
+			<mat-hint align="start">Submit like: Buffet Time#5224</mat-hint>
+			<mat-hint align="end">{{discordBox.value.length}} / 30</mat-hint>
+		</mat-form-field>
+		<br>
+
+		<mat-form-field class="input" color="accent">
+			<input matInput #subjectBox maxlength="50" placeholder="Subject" type="text" 
+					[(ngModel)]="subject" [ngModelOptions]="{standalone: true}">
+			<button mat-button *ngIf="subject" matSuffix mat-icon-button aria-label="Clear" (click)="subject=''">
+				<mat-icon>close</mat-icon>
+			</button>
+			<mat-hint align="start">Message subject</mat-hint>
+			<mat-hint align="end">{{subjectBox.value.length}} / 50</mat-hint>
+		</mat-form-field>
+		<br>
+
+		<mat-form-field class="textarea" color="accent">
+			<textarea matInput id="messageBodyTextArea" #body (keyup)="textAreaUpdate()" maxlength="1000" placeholder="Body"></textarea>
+			<mat-hint align="start">Message body</mat-hint>
+			<mat-hint align="end">{{body.value.length}} / 1000</mat-hint>
+		</mat-form-field>
+	</form>
+	<br>
+	
+	<div class="submit-div">
+		<button mat-raised-button color="accent" class="submit-button" (click)="submit()">Submit</button>
+	</div>
 </mat-card>
