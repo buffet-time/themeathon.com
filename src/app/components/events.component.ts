@@ -18,11 +18,6 @@ export class EventsComponent
 
 	submit() 
 	{
-		console.log(this.displayName);
-		console.log(this.discordName);
-		console.log(this.subject);
-		console.log(this.body);
-
 		if ( this.displayName && this.discordName && this.subject &&  this.body)
 		{
 			if ( this.displayName.length < 31 && this.discordName.length < 31 && this.subject.length < 51 && this.body.length < 1001) 
@@ -44,7 +39,7 @@ export class EventsComponent
 	// binds the value of the textarea to the variable body upon every key press.
 	textAreaUpdate()
 	{
-		this.body = document.getElementById("messageBodyTextArea").value; // VSC says it's wrong (atleast with the extensions i have)
+		this.body = (<HTMLInputElement>document.getElementById("messageBodyTextArea")).value;
 	}
 
 	openSnackBar( message ) 
