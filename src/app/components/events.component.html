@@ -1,52 +1,48 @@
 <mat-card class="main-card">
-	<div class="title">
-		<h2>Themeathon - 3rd Party Event Submission</h2>
-	</div>
+	<h1 class="title">Guidelines for our 3rd party events.</h1>
+
+	<h2>What we offer!</h2>
+
+	<ul>
+		<li>An already existing community that is tolerant to various games and events.</li>
+		<li>help in organizing your events to make the most of them!</li>
+		<li>Experienced Staff and Moderation team!</li>
+		<li>Experience interacting with Twitch staff for possible front page promotion. (This requires many months in advance notice)</li>
+	</ul>
+
+	<h2>Our requirements</h2>
+
+	Of course we have strict requirements when it comes to 3rd party events.
+	But if you have a really good and/or unique idea we will lower them a bit.
+	<br><br>
+
+	Requirements:
 	<br>
 
-	<form class="main-form">
-		<mat-form-field class="input" color="accent">
-			<input matInput #displayNameBox maxlength="30" placeholder="Display Name" type="text" 
-					[(ngModel)]="displayName" [ngModelOptions]="{standalone: true}">
-			<button mat-button *ngIf="displayName" matSuffix mat-icon-button aria-label="Clear" (click)="displayName=''">
-				<mat-icon>close</mat-icon>
-			</button>
-			<mat-hint align="start">Your display name</mat-hint>
-			<mat-hint align="end">{{displayNameBox.value.length}} / 30</mat-hint>
-		</mat-form-field>
-		<br>
-
-		<mat-form-field class="input" color="accent">
-			<input matInput #discordBox maxlength="30" placeholder="Discord Name" type="text" 
-					[(ngModel)]="discordName" [ngModelOptions]="{standalone: true}">
-			<button mat-button *ngIf="discordName" matSuffix mat-icon-button aria-label="Clear" (click)="discordName=''">
-				<mat-icon>close</mat-icon>
-			</button>
-			<mat-hint align="start">Submit like: Buffet Time#5224</mat-hint>
-			<mat-hint align="end">{{discordBox.value.length}} / 30</mat-hint>
-		</mat-form-field>
-		<br>
-
-		<mat-form-field class="input" color="accent">
-			<input matInput #subjectBox maxlength="50" placeholder="Subject" type="text" 
-					[(ngModel)]="subject" [ngModelOptions]="{standalone: true}">
-			<button mat-button *ngIf="subject" matSuffix mat-icon-button aria-label="Clear" (click)="subject=''">
-				<mat-icon>close</mat-icon>
-			</button>
-			<mat-hint align="start">Message subject</mat-hint>
-			<mat-hint align="end">{{subjectBox.value.length}} / 50</mat-hint>
-		</mat-form-field>
-		<br>
-
-		<mat-form-field class="textarea" color="accent">
-			<textarea matInput id="messageBodyTextArea" #body (keyup)="textAreaUpdate()" maxlength="1000" placeholder="Body"></textarea>
-			<mat-hint align="start">Message body</mat-hint>
-			<mat-hint align="end">{{body.value.length}} / 1000</mat-hint>
-		</mat-form-field>
-	</form>
+	<ul>
+		<li>Send us a detailed plan of your event</li>
+		<li>What game/ games will there be?</li>
+		<li>How long will the event last?</li>
+		<li>Will the event have a prize pool? (How much or what will be given away)</li>
+		<li>Are you providing a Team? (GFX, Streamers, Commentators, Moderators)</li>
+		<li>Are you experienced with organizing events?</li>
+		<li>Tell something about yourself?</li>
+		<li>Your expectations?</li>
+	</ul>
 	<br>
-	
-	<div class="submit-div">
-		<button mat-raised-button color="accent" class="submit-button" (click)="submit()">Submit</button>
-	</div>
+
+	After you have thought about everything and understand the requirements/ guidelines, feel free to submit your idea to us!
+	<br>
+
+	<h2>Where and how can I submit my event?</h2>
+	Send us an Email here - themeathon@gmail.com or <a href="mailto:themeathon@gmail.com" class="mail-to">click here</a><br>
+	We will get in contact with you after approximately 2-5 business days.
+	After we replied to you, we will send you further instructions via Email.
+	<br>
+
+	<h2>What timeslot will my event be in?</h2>
+	We try to find the best possible timeslot for your event.
+	But keep in mind that we are just a small team and we can't interfere with already planned events or our main events.
+	After we find a possible time window we will get in contact with you and your team.
+	<br>
 </mat-card>

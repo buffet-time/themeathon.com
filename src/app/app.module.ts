@@ -11,11 +11,11 @@ import { MaterialImportModule } from './material-import.module';
 
 import { AppComponent } from './components/app.component';
 import { StreamComponent, DescriptionDialog } from './components/stream.component';
-import { EventsComponent, EventsConfirmationDialog } from './components/events.component';
+import { EventsComponent } from './components/events.component';
 
 const appRoutes: Routes = [
-	{ path: '', component: StreamComponent},
-	{ path: 'events', component: EventsComponent }
+	{ path: '', component: StreamComponent },
+	{ path: 'events', component: EventsComponent },
   ];
 
 @NgModule({
@@ -23,8 +23,7 @@ const appRoutes: Routes = [
     AppComponent,
 	StreamComponent,
 	EventsComponent,
-	DescriptionDialog,
-	EventsConfirmationDialog
+	DescriptionDialog
   ],
   imports: [
     BrowserModule,
@@ -37,7 +36,7 @@ const appRoutes: Routes = [
 	  )
   ],
   bootstrap: [ AppComponent ],
-  entryComponents: [ DescriptionDialog, EventsConfirmationDialog ]
+  entryComponents: [ DescriptionDialog ]
 })
 export class AppModule {
     constructor(overlayContainer: OverlayContainer) {

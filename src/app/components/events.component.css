@@ -1,35 +1,27 @@
 .main-card {
-	margin-top: 45px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	margin-left: 20%;
 	margin-right: 20%;
 	padding-right: 75px;
 	padding-left: 75px;
 }
 
-.main-form {
-	width: 100%;
-}
-
-.textarea {
-	padding-bottom: 18px;
-	width: 100%;
-}
-
-.input {
-	padding-bottom: 18px;
-	width: 100%;
-}
-
-.submit-div {
+.title { 
 	text-align: center;
 }
 
-.submit-button {
-	width: 150px;
+.email-button {
+	margin-top: 14px;
 }
 
-.title {
-	text-align: center;
+.mail-to {
+	color: red;
+	text-decoration: none;
+}
+
+h2 { 
+	color: red;
 }
 
 @media (max-width: 1200px) {
