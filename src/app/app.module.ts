@@ -12,17 +12,20 @@ import { MaterialImportModule } from './material-import.module';
 import { AppComponent } from './components/app.component';
 import { StreamComponent, DescriptionDialog } from './components/stream.component';
 import { EventsComponent } from './components/events.component';
+import { GuidesComponent } from './components/guides.component';
 
 const appRoutes: Routes = [
 	{ path: '', component: StreamComponent },
-	{ path: 'events', component: EventsComponent },
+  	{ path: 'events', component: EventsComponent },
+  	{ path: 'guides', component: GuidesComponent },
   ];
 
 @NgModule({
   declarations: [
     AppComponent,
 	StreamComponent,
-	EventsComponent,
+  	EventsComponent,
+  	GuidesComponent,
 	DescriptionDialog
   ],
   imports: [

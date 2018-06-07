@@ -1,0 +1,29 @@
+.main-card {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-right: 75px;
+	padding-left: 75px;
+}
+.link {
+    color: #FC4646;
+    text-decoration: none;
+  }
+
+.title { 
+	text-align: center;
+}
+
+h2 { 
+	color: red;
+}
+
+@media (max-width: 1200px) {
+	.main-card {
+		margin-left: 10%;
+		margin-right: 10%;
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+}
