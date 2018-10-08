@@ -4,7 +4,7 @@
 }
 
 @keyframes mouse-hover {
-	from {border: solid 4px #333333;}
+	from {border: solid 4px #131735;}
 	to {border: solid 4px rgb(252, 70, 70);}
 }
 
@@ -24,7 +24,7 @@
 }
 
 @-webkit-keyframes mouse-hover {
-  from {border: solid 4px #333333;}
+  from {border: solid 4px #131735;}
   to {border: solid 4px rgb(252, 70, 70);}
 }
 
@@ -60,7 +60,7 @@
 }
 
 .about-thm {
-  background-color: #777;
+  background-color: #555;
   display: flex;
   flex-direction: row;
   order: 2;
@@ -69,16 +69,14 @@
   font-family: Roboto, "Helvetica Neue", sans-serif;
   margin: 24px;
   padding: 12px;
-  height: 42%;
-  width: 34%;
 }
 
-.link {
+a {
   color: #FC4646;
   text-decoration: none;
 }
 
-.link:hover {
+a:hover {
   color: rgb(252, 120, 120);
 }
 
@@ -89,7 +87,7 @@
 }
 
 .staff-section {
-  background-color: #777;
+  background-color: #555;
   margin: 24px;
   padding: 12px;
   width: 34%;
