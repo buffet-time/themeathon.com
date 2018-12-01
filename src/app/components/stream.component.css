@@ -5,7 +5,7 @@
 
 @keyframes mouse-hover {
 	from {
-		border: solid 4px #333333;
+		border: solid 4px #131735;
 	}
 	to {
 		border: solid 4px rgb(252, 70, 70);
@@ -29,7 +29,7 @@
 
 @-webkit-keyframes mouse-hover {
 	from {
-		border: solid 4px #333333;
+		border: solid 4px #131735;
 	}
 	to {
 		border: solid 4px rgb(252, 70, 70);
@@ -51,71 +51,54 @@
 	}
 }
 
-#title-mobile {
-	display: none;
+.title {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	order: 1;
 }
 
-.about-stc {
-	background-color: #777;
-	order: 1;
-	text-align: center;
-	color: #fff;
-	float: right;
-	font-family: Roboto, 'Helvetica Neue', sans-serif;
-	height: 100%;
-	width: 34%;
-	margin: 24px;
-	padding: 12px;
+#title-text {
+	margin-left: -40px;
+	letter-spacing: 0;
+	padding-top: 27px;
+}
+
+#logo {
+	width: 100px;
+	height: 100px;
+	margin-left: -15px;
 }
 
 .about-thm {
-	background-color: #777;
 	display: flex;
 	flex-direction: row;
 	order: 2;
 	color: #fff;
-	text-align: center;
+	text-align: justify;
 	font-family: Roboto, 'Helvetica Neue', sans-serif;
-	margin: 24px;
-	padding: 12px;
-	height: 42%;
-	width: 34%;
+	width: 60%;
+	margin: auto;
 }
 
-.about-thm * {
-	padding: 0 18px;
-}
-
-.about-thm p {
-	order: 1;
-	width: 50%;
-}
-
-#crane {
-	position: absolute;
-	bottom: 150px;
-}
-
-.link {
+a {
 	color: #fc4646;
 	text-decoration: none;
 }
 
-.link:hover {
+a:hover {
 	color: rgb(252, 120, 120);
 }
 
 .main-container {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	overflow: hidden;
 }
 
 .staff-section {
-	background-color: #777;
-	margin: 24px;
-	padding: 12px;
-	width: 34%;
+	width: 90%;
+	margin: auto;
 	order: 3;
 }
 
@@ -134,15 +117,15 @@
 .caption * {
 	font-family: ADAM, Roboto, 'Helvetica Neue', sans-serif;
 	text-align: center;
-	color: #fff;
-	text-shadow: #000 3px 3px 0;
+	color: #fc4646;
+	text-shadow: #131735 3px 3px 0;
 }
 
 .row-header * {
 	font-family: ADAM, Roboto, 'Helvetica Neue', sans-serif;
 	font-size: 32px;
-	color: #fff;
-	text-shadow: #000 3px 3px 0;
+	color: #fc4646;
+	text-shadow: #131735 3px 3px 0;
 	padding-bottom: 10px;
 	letter-spacing: 8px;
 }
@@ -167,8 +150,8 @@
 h1 {
 	font-family: SAMURAI, Roboto, 'Helvetica Neue', sans-serif;
 	text-align: center;
-	color: #fff;
-	text-shadow: #000 3px 3px 0;
+	color: #fc4646;
+	text-shadow: #131735 3px 3px 0;
 	letter-spacing: 5px;
 	font-size: 45px;
 }
@@ -176,8 +159,8 @@ h1 {
 h3 {
 	font-family: SAMURAI, Roboto, 'Helvetica Neue', sans-serif;
 	text-align: center;
-	color: #fff;
-	text-shadow: #000 3px 3px 0;
+	color: #fc4646;
+	text-shadow: #131735 3px 3px 0;
 	letter-spacing: 3px;
 	font-size: 28px;
 }
@@ -186,49 +169,9 @@ h3 {
 	display: none;
 }
 
-@media (max-width: 1680px) {
-	.about-stc {
-		height: 120%;
-	}
-	.staff-section {
-		width: 36%;
-	}
-}
-
-@media (max-width: 1512px) {
-	.main-container {
-		flex-direction: column;
-	}
-	h1 {
-		order: 1;
-	}
-	.about-thm {
-		width: 55%;
-		order: 2;
-		margin: 25px auto;
-	}
-
-	#crane {
-		position: absolute;
-		bottom: 150px;
-		right: 100px;
-	}
-
-	.about-stc {
-		width: 55%;
-		order: 3;
-		margin: 25px auto;
-	}
-	.staff-section {
-		order: 4;
-		width: 55%;
-		margin: 25px auto;
-	}
-}
-
 @media (max-width: 970px) {
 	.staff-section {
-		width: 55%;
+		width: 100%;
 	}
 	.first-staff {
 		display: none;
@@ -252,62 +195,10 @@ h3 {
 	}
 }
 
-@media (max-width: 1120px) {
-	#crane {
-		position: absolute;
-		bottom: 220px;
-		right: 20px;
-	}
-}
-
-@media (max-width: 750px) {
-	#crane {
-		position: absolute;
-		bottom: 280px;
-		right: -25px;
-		transform: scale(0.8, 0.8);
-	}
-}
-
-@media (max-width: 680px) {
-	#title-mobile {
-		display: block;
-	}
-	#crane {
-		display: none;
-	}
-	.about-thm p {
-		width: 90%;
-		margin-left: -5px;
-	}
-}
-
-@media (max-width: 550px) {
-	.about-thm {
-		width: 90%;
-	}
-	.about-stc {
-		width: 90%;
-	}
-	.staff-section {
-		width: 90%;
-	}
-	.stc-img {
-		height: 180px;
-		width: 250px;
-	}
-}
-
 @media (max-width: 465px) {
 	.about-title {
 		letter-spacing: 3px;
 		font-size: 25px;
-	}
-}
-
-@media (max-width: 414px) {
-	.children-pic {
-		display: none;
 	}
 }
 
@@ -319,9 +210,6 @@ h3 {
 	h1 {
 		letter-spacing: 3px;
 		font-size: 24px;
-	}
-	.about-stc {
-		height: 120%;
 	}
 }
 
