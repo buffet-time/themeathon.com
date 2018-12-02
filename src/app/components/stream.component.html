@@ -1,223 +1,299 @@
 <div class="main-container">
-	<table class="title">
-        <tr>
-            <td><img id="logo" src="../../assets/themeathon.png"></td>
-            <td><h1 id="title-text">HEMEATHON</h1></td>
-        </tr>
+	<table class="title no-select">
+		<tr>
+			<td><img id="logo" src="../../assets/themeathon.png" /></td>
+			<td><h1 id="title-text">HEMEATHON</h1></td>
+		</tr>
 	</table>
-	  <div class="about-thm">
-	  <div class="thm-container">
-		<p>
-		  Themeathon is a speedrunning marathon for charity founded by Lordmau5 and Jugachi in 2016. <br> <br>
-          Each of our marathons raises money for the <a href="https://www.savethechildren.org/">Save the Children Federation</a> and
-          has a specific theme that guides the content provided to you by our lovely hosts. Thus far we've raised over
-          $10,000 for Save the Children, and we plan on raising much much more!<br> <br>
-		  The official marathon this year will be Japan themed! <br>
-		  If you have a run, feel welcome to submit for the official marathon! Don't worry about conforming to the Japan theme,
-		  it's not required for any runs. <br> <br> </p>
-  
-		<h3 class="timedates">THEMEATHON will happen in late autumn of this year! Stay tuned for specific dates and location!</h3>
-	  </div>
-	  </div>
 
-	  <br>
-  
-	  <div class="staff-section">
-		  <div class="team-header-wrapper">
-			  <h1 id="team">OUR BELOVED TEAM</h1>
-		  </div>
-  
-		  <table class="first-staff">
-			  <tr class="row-header">
-				  <td style="text-align: right;">Foun</td>
-				  <td>ders</td>
-			  </tr>
-			  <tr class="founders">
-				  <td class="staff-picture" (click)="openDialog(this.jugachiDescription, 'Jugachi')">
-					  <img src="../../assets/jugachi.png">
-				  </td>
-				  <td class="staff-picture" (click)="openDialog(this.lordmausDescription, 'Lordmau5')">
-					  <img src="../../assets/lordmau5.png">
-				  </td>
-			  </tr>
-			  <tr class="caption">
-				  <td>Jugachi</td>
-				  <td>Lordmau5</td>
-			  </tr>
-			  <tr class="row-header">
-				  <td style="text-align: right;">Devel</td>
-				  <td>opers</td>
-			  </tr>
-			  <tr class="developers">
-				  <td class="staff-picture" (click)="openDialog(this.nicDescription, 'Nic Howe')">
-					  <img src="../../assets/nic.png">
-				  </td>
-				  <td class="staff-picture" (click)="openDialog(this.buffetDescription, 'Buffet Time')">
-					  <img src="../../assets/buffet.png">
-				  </td>
-			  </tr>
-			  <tr class="caption">
-				  <td>Nichow</td>
-				  <td>Buffet Time</td>
-			  </tr>
-		  </table>
-  
-		  <table class="second-staff">
-			  <tr class="row-header">
-				  <td style="text-align: right">Mo</td>
-				  <td>ds</td>
-			  </tr>
-			  <tr class="other">
-				  <td class="staff-picture" (click)="openDialog(this.konasumiDescription, 'Konasumi')">
-					  <img src="../../assets/kona.png">
-				  </td>
-				  <td class="staff-picture" (click)="openDialog(this.dqfanDescription, 'DQFan')">
-					  <img src="../../assets/dqfan.png">
-				  </td>
-			  </tr>
-			  <tr class="caption">
-				  <td>Konasumi</td>
-				  <td>DQFan</td>
-			  </tr>
-			  <tr class="row-header">
-				  <td style="text-align: center">Editor</td>
-				  <td style="text-align: center">Host/Mod</td>
-			  </tr>
-			  <tr class="other">
-				  <td class="staff-picture" (click)="openDialog(this.speedyDescription, 'Speedy')">
-					  <img src="../../assets/speedy.png">
-				  </td>
-				  <td class="staff-picture" (click)="openDialog(this.foxDescription, 'Fox')">
-					  <img src="../../assets/fox.png">
-				  </td>
-			  </tr>
-			  <tr class="caption">
-				  <td>Speedy</td>
-				  <td>Fox</td>
-			  </tr>
-		  </table>
+	<div class="twitch-player-div"></div>
 
-		  <table class="third-staff">
-			  <tr class="row-header">
-				  <td style="text-align: center">Host</td>
-				  <td style="text-align: center">Artist</td>
-			  </tr>
-			  <tr class="other">
-				  <td class="staff-picture" (click)="openDialog(this.mergyDescription, 'Mergy')">
-					  <img src="../../assets/mergy.png">
-				  </td>
-				  <td class="staff-picture" (click)="openDialog(this.owlisDescription, 'Owlis')">
-					  <img src="../../assets/OwLisDoodles.png">
-				  </td>
-			  </tr>
-			  <tr class="caption">
-				  <td>Mergy</td>
-				  <td>Owlisdoodles</td>
-			  </tr>
-		  </table>
-  
-		  <table class="mobile-staff">
-			  <tr class="row-header">
-			  <td style="text-align: center">Founders</td>
-			  </tr>
-			  <tr class="founders">
-			  <td class="staff-picture" (click)="openDialog(this.jugachiDescription, 'Jugachi')">
-				  <img src="../../assets/jugachi.png">
-			  </td>
-			  </tr>
-			  <tr class="caption">
-			  <td>Jugachi</td>
-			  </tr>
-			  <tr class="founders">
-			  <td class="staff-picture" (click)="openDialog(this.lordmausDescription, 'Lordmau5')">
-				  <img src="../../assets/lordmau5.png">
-			  </td>
-			  </tr>
-			  <tr class="caption">
-			  <td>Lordmau5</td>
-			  </tr>
-			  <tr class="row-header">
-			  <td style="text-align: center">Developers</td>
-			  </tr>
-			  <tr class="developers">
-			  <td class="staff-picture" (click)="openDialog(this.nicDescription, 'Nic Howe')">
-				  <img src="../../assets/nic.png">
-			  </td>
-			  </tr>
-			  <tr class="caption">
-			  <td>nichow</td>
-			  </tr>
-			  <tr class="developers">
-			  <td class="staff-picture" (click)="openDialog(this.buffetDescription, 'Buffet Time')">
-				  <img src="../../assets/buffet.png">
-			  </td>
-			  </tr>
-			  <tr class="caption">
-			  <td>Buffet Time</td>
-			  </tr>
-			  <tr class="row-header">
-			  <td style="text-align: center">Mods</td>
-			  </tr>
-			  <tr class="other">
-			  <td class="staff-picture" (click)="openDialog(this.konasumiDescription, 'Konasumi')">
-				  <img src="../../assets/kona.png">
-			  </td>
-			  </tr>
-			  <tr class="caption">
-			  <td>Konasumi</td>
-			  </tr>
-			  <tr class="other">
-			  <td class="staff-picture" (click)="openDialog(this.dqfanDescription, 'DQFan')">
-				  <img src="../../assets/dqfan.png">
-			  </td>
-			  </tr>
-			  <tr class="caption">
-			  <td>DQFan</td>
-			  </tr>
-			  <tr class="row-header">
-			  <td style="text-align: center">Editor</td>
-			  </tr>
-			  <tr class="other">
-			  <td class="staff-picture" (click)="openDialog(this.speedyDescription, 'Speedy')">
-				  <img src="../../assets/speedy.png">
-			  </td>
-			  </tr>
-			  <tr class="caption">
-			  <td>Speedy</td>
-			  </tr>
-			  <tr class="row-header">
-				  <td style="text-align: center">Host/Mod</td>
-			  </tr>
-			  <tr class="other">
-			  <td class="staff-picture" (click)="openDialog(this.foxDescription, 'Fox')">
-				  <img src="../../assets/fox.png">
-			  </td>
-			  </tr>
-			  <tr class="caption">
-			  <td>Fox</td>
-			  </tr>
-			  <tr class="row-header">
-				  <td style="text-align: center">Host</td>
-			  </tr>
-			  <tr class="other">
-				  <td class="staff-picture" (click)="openDialog(this.mergyDescription, 'Mergy')">
-					  <img src="../../assets/mergy.png">
-				  </td>
-			  </tr>
-			  <tr class="caption">
-				  <td>Mergy</td>
-			  </tr>
-			  <tr class="row-header">
-				  <td style="text-align: center">Artist</td>
-			  </tr>
-			  <tr class="other">
-				  <td class="staff-picture" (click)="openDialog(this.owlisDescription, 'Owlis')">
-					  <img src="../../assets/OwLisDoodles.png">
-				  </td>
-			  </tr>
-			  <tr class="caption">
-				  <td>Owlisdoodles</td>
-			  </tr>
-		  </table>
-	  </div>
-  </div>
+	<div class="about-thm">
+		<div class="thm-container">
+			<p>
+				Themeathon is a speedrunning marathon for charity founded by Lordmau5
+				and Jugachi in 2016. <br />
+				<br />
+				Each of our marathons raises money for the
+				<a href="https://www.savethechildren.org/"
+					>Save the Children Federation</a
+				>
+				and has a specific theme that guides the content provided to you by our
+				lovely hosts. Thus far we've raised over $10,000 for Save the Children,
+				and we plan on raising much much more!<br />
+				<br />
+				The official marathon this year will be Japan themed! <br />
+				If you have a run, feel welcome to submit for the official marathon!
+				Don't worry about conforming to the Japan theme, it's not required for
+				any runs. <br />
+				<br />
+			</p>
+
+			<h3 class="timedates">
+				THEMEATHON will happen in late autumn of this year! Stay tuned for
+				specific dates and location!
+			</h3>
+		</div>
+	</div>
+
+	<br />
+
+	<div class="staff-section">
+		<div class="team-header-wrapper no-select">
+			<h1 id="team">OUR BELOVED TEAM</h1>
+		</div>
+
+		<table class="first-staff">
+			<tr class="row-header">
+				<td style="text-align: right;">Foun</td>
+				<td>ders</td>
+			</tr>
+			<tr class="founders">
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.jugachiDescription, 'Jugachi')"
+				>
+					<img src="../../assets/jugachi.png" />
+				</td>
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.lordmausDescription, 'Lordmau5')"
+				>
+					<img src="../../assets/lordmau5.png" />
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Jugachi</td>
+				<td>Lordmau5</td>
+			</tr>
+			<tr class="row-header">
+				<td style="text-align: right;">Devel</td>
+				<td>opers</td>
+			</tr>
+			<tr class="developers">
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.nicDescription, 'Nic Howe')"
+				>
+					<img src="../../assets/nic.png" />
+				</td>
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.buffetDescription, 'Buffet Time')"
+				>
+					<img src="../../assets/buffet.png" />
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Nichow</td>
+				<td>Buffet Time</td>
+			</tr>
+		</table>
+
+		<table class="second-staff">
+			<tr class="row-header">
+				<td style="text-align: right">Mo</td>
+				<td>ds</td>
+			</tr>
+			<tr class="other">
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.konasumiDescription, 'Konasumi')"
+				>
+					<img src="../../assets/kona.png" />
+				</td>
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.dqfanDescription, 'DQFan')"
+				>
+					<img src="../../assets/dqfan.png" />
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Konasumi</td>
+				<td>DQFan</td>
+			</tr>
+			<tr class="row-header">
+				<td style="text-align: center">Editor</td>
+				<td style="text-align: center">Host/Mod</td>
+			</tr>
+			<tr class="other">
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.speedyDescription, 'Speedy')"
+				>
+					<img src="../../assets/speedy.png" />
+				</td>
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.foxDescription, 'Fox')"
+				>
+					<img src="../../assets/fox.png" />
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Speedy</td>
+				<td>Fox</td>
+			</tr>
+		</table>
+
+		<table class="third-staff">
+			<tr class="row-header">
+				<td style="text-align: center">Host</td>
+				<td style="text-align: center">Artist</td>
+			</tr>
+			<tr class="other">
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.mergyDescription, 'Mergy')"
+				>
+					<img src="../../assets/mergy.png" />
+				</td>
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.owlisDescription, 'Owlis')"
+				>
+					<img src="../../assets/OwLisDoodles.png" />
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Mergy</td>
+				<td>Owlisdoodles</td>
+			</tr>
+		</table>
+
+		<table class="mobile-staff">
+			<tr class="row-header">
+				<td style="text-align: center">Founders</td>
+			</tr>
+			<tr class="founders">
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.jugachiDescription, 'Jugachi')"
+				>
+					<img src="../../assets/jugachi.png" />
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Jugachi</td>
+			</tr>
+			<tr class="founders">
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.lordmausDescription, 'Lordmau5')"
+				>
+					<img src="../../assets/lordmau5.png" />
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Lordmau5</td>
+			</tr>
+			<tr class="row-header">
+				<td style="text-align: center">Developers</td>
+			</tr>
+			<tr class="developers">
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.nicDescription, 'Nic Howe')"
+				>
+					<img src="../../assets/nic.png" />
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>nichow</td>
+			</tr>
+			<tr class="developers">
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.buffetDescription, 'Buffet Time')"
+				>
+					<img src="../../assets/buffet.png" />
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Buffet Time</td>
+			</tr>
+			<tr class="row-header">
+				<td style="text-align: center">Mods</td>
+			</tr>
+			<tr class="other">
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.konasumiDescription, 'Konasumi')"
+				>
+					<img src="../../assets/kona.png" />
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Konasumi</td>
+			</tr>
+			<tr class="other">
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.dqfanDescription, 'DQFan')"
+				>
+					<img src="../../assets/dqfan.png" />
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>DQFan</td>
+			</tr>
+			<tr class="row-header">
+				<td style="text-align: center">Editor</td>
+			</tr>
+			<tr class="other">
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.speedyDescription, 'Speedy')"
+				>
+					<img src="../../assets/speedy.png" />
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Speedy</td>
+			</tr>
+			<tr class="row-header">
+				<td style="text-align: center">Host/Mod</td>
+			</tr>
+			<tr class="other">
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.foxDescription, 'Fox')"
+				>
+					<img src="../../assets/fox.png" />
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Fox</td>
+			</tr>
+			<tr class="row-header">
+				<td style="text-align: center">Host</td>
+			</tr>
+			<tr class="other">
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.mergyDescription, 'Mergy')"
+				>
+					<img src="../../assets/mergy.png" />
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Mergy</td>
+			</tr>
+			<tr class="row-header">
+				<td style="text-align: center">Artist</td>
+			</tr>
+			<tr class="other">
+				<td
+					class="staff-picture"
+					(click)="openDialog(this.owlisDescription, 'Owlis')"
+				>
+					<img src="../../assets/OwLisDoodles.png" />
+				</td>
+			</tr>
+			<tr class="caption">
+				<td>Owlisdoodles</td>
+			</tr>
+		</table>
+	</div>
+</div>

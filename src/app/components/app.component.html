@@ -1,28 +1,27 @@
 <div [class.app-dark-theme]="true">
-    <mat-sidenav-container fullscreen class="sidenav-container">
-        <mat-toolbar class="toolbar">
+	<mat-sidenav-container fullscreen class="sidenav-container">
+		<mat-toolbar class="toolbar">
 			<div class="social-media" id="logo">
-				<img src="../../assets/themeathon.png">
+				<img src="../../assets/themeathon.png" />
 			</div>
 
 			<div class="social-media" id="discord" (click)="navigateToDiscord()">
-				<img src="../../assets/discord.png">
+				<img src="../../assets/discord.png" />
 			</div>
 
 			<div class="social-media" id="twitch" (click)="navigateToTwitch()">
-				<img src="../../assets/twitch.png">
+				<img src="../../assets/twitch.png" />
 			</div>
 
 			<div class="social-media" id="twitter" (click)="navigateToTwitter()">
-				<img src="../../assets/twitter.png">
+				<img src="../../assets/twitter.png" />
 			</div>
 
 			<div class="social-media" id="youtube" (click)="navigateToYoutube()">
-				<img src="../../assets/youtube.png">
+				<img src="../../assets/youtube.png" />
 			</div>
 		</mat-toolbar>
 
 		<router-outlet></router-outlet>
-
-    </mat-sidenav-container>
+	</mat-sidenav-container>
 </div>

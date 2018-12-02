@@ -1,40 +1,54 @@
 .sidenav-container {
-	  width: 100%;
-	  height: 100%;
-	}
+	width: 100%;
+	height: 100%;
+}
 
-  .toolbar {
+.toolbar {
 	top: 0;
-  	position: sticky;
+	position: sticky;
 	position: -webkit-sticky;
 	z-index: 50;
 	width: 100%;
-  }
+}
 
-  .social-media {
+.social-media {
 	padding-top: 6px;
 	margin: 0 15px;
 	cursor: pointer;
-  	display: inline;
-  }
+	display: inline;
+}
 
-  .social-media img {
+.social-media img {
 	fill: #fff;
 	width: 32px;
 	height: 32px;
-  }
+}
 
-  .social-media-text {
+.social-media-text {
 	float: right;
 	margin-left: 6px;
-  }
+}
 
-  #logo {
-  	padding-top: 10px;
-  	margin: 0 10px;
-  }
+#logo {
+	padding-top: 10px;
+	margin: 0 10px;
+}
 
-  #logo img {
-  	width: 64px;
-  	height: 64px;
-  }
+#logo img {
+	width: 64px;
+	height: 64px;
+}
+
+img {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

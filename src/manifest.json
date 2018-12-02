@@ -1,9 +1,9 @@
 {
-  "name": "Themeathon",
-  "short_name": "Themeathon",
-  "description": "Themeathon is a charity speedrunning marathon founded by Lordmau5 and Jugachi in 2016.",
-  "start_url": "index.html",
-  "display": "standalone",
-  "background_color": "#303030",
-  "theme_color": "#388e3c"
+	"name": "Themeathon",
+	"short_name": "Themeathon",
+	"description": "Themeathon is a charity speedrunning marathon founded by Lordmau5 and Jugachi in 2016.",
+	"start_url": "index.html",
+	"display": "standalone",
+	"background_color": "#303030",
+	"theme_color": "#388e3c"
 }
