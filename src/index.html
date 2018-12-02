@@ -10,6 +10,7 @@
 			name="description"
 			content="Themeathon is a charity speedrunning marathon founded by Lordmau5 and Jugachi in 2016."
 		/>
+		<!-- <script src="https://player.twitch.tv/js/embed/v1.js"></script> -->
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
 		<link
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -18,6 +19,23 @@
 	</head>
 
 	<body>
-		<app-root></app-root>
+		<app-root>
+			<!--
+				<div id="test"></div>
+				<script type="text/javascript">
+					console.log('test')
+					const options = {
+						width: 854,
+						height: 480,
+						channel: 'themathon',
+					}
+					console.log('test 2')
+					const player = new Twitch.Player('test', options)
+					console.log('test 3')
+					player.setVolume(0.5)
+					console.log('test 4')
+				</script>
+			-->
+		</app-root>
 	</body>
 </html>

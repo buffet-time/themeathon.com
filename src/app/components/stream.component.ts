@@ -1,12 +1,13 @@
 import { Component, Optional, Inject } from '@angular/core'
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material'
+import 'twitch-embed'
 
 @Component({
 	selector: 'stream-component',
 	templateUrl: './stream.component.html',
 	styleUrls: ['./stream.component.css'],
 })
-export class StreamComponent {
+export class StreamComponent { // implements OnInit
 	jugachiDescription =
 		// tslint:disable-next-line:quotemark
 		"My name is Jugachi and I'm the founder of Themeathon. " +
@@ -67,6 +68,35 @@ export class StreamComponent {
 	owlisDescription = 'bla bla bla bla bla'
 
 	constructor(private dialog: MatDialog) {}
+
+	// ngOnInit() {
+	// 	// const options = {
+	// 	// 	width: 854,
+	// 	// 	height: 480,
+	// 	// 	channel: 'themathon',
+	// 	// }
+	// 	// const player = new Twitch.Player('<player div ID>', options)
+	// 	// player.setVolume(0.5)
+
+	// 	console.log('yeet')
+	// 	const options = {
+	// 		width: 854,
+	// 		height: 480,
+	// 		channel: 'themeathon',
+	// 	}
+	// 	console.log('yeet 2')
+
+	// 	const player = new window.Twitch.Player('test', options)
+
+	// 	console.log('yeet 3')
+	// 	player.setVolume(0.5)
+	// 	window.setInterval(function() {
+	// 		console.log('hit')
+	// 		if (!player.getEnded()) {
+	// 			console.log('bam')
+	// 		}
+	// 	}, 5000)
+	// }
 
 	openDialog(description: string, name: string) {
 		this.dialog.open(DescriptionDialog, {
